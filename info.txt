@@ -1,0 +1,4 @@
+background: #FFFFFF
+text: #111827
+h1 : #EF4444
+h2 : #F3F4F6

@@ -1,0 +1,36 @@
+.projectsSection {
+    padding: 0.5rem;
+    background-color: #1F1F1F;
+    border: 1px solid #FFBF00;
+    border-radius: 1rem;
+    scroll-margin-top: 130px;
+    background: radial-gradient(circle, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9));
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFBF00;
+    margin: 1rem 0;
+}
+
+.projectLink img {
+    max-width: 80%;
+    border-radius: 0.7rem;
+    height: 10rem;
+    object-fit: contain;
+    display: block;
+    margin: 0.5rem auto;
+    cursor: pointer;
+}
+
+
+.projectTechnologies {
+    font-size: 1.5rem;
+    color: #FFBF00;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0.7rem;
+    gap: 0.5rem;
+}
