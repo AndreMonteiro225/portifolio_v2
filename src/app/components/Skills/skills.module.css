@@ -36,6 +36,7 @@
     border: 4px solid;
     border-image: linear-gradient(90deg, #FFBF00, #D4D4D4, black) 1;
     animation: borderGradient 3s infinite;
+    --webkit-animation: borderGradient 3s infinite;
     border-radius: 0.5rem;
     padding: 2rem;
     width: 90%;
