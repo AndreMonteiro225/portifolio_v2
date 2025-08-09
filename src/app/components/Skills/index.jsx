@@ -4,6 +4,7 @@ export default function Skills() {
   return (
     <section id="skills" className={styles.skillsSection}>
       <h2>Minhas Habilidades</h2>
+      <div className={styles.skillsFlexRow}>
       <ul>
         <h3>Front-End</h3>
         <li>HTML</li>
@@ -22,6 +23,7 @@ export default function Skills() {
         <li>GitHub</li>
         <li>Vercel</li>
       </ul>
+      </div>
     </section>
   );
 }

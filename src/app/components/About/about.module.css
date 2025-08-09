@@ -1,13 +1,13 @@
 .aboutSection {
     padding-bottom: 1.5rem;
-    margin: 0 1.5em;
+    margin: 0 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .aboutSection p {
-     font-size: 1.5rem;
+     font-size: 2rem;
     margin: 1rem;
     text-align: center;
 }

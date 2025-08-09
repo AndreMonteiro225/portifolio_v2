@@ -13,6 +13,11 @@
     padding: 0.7rem 0;
 }
 
+.contactSection p {
+    font-size: 1.2rem;
+    color: #d5d5d5;
+}
+
 .contactButton {
     background-color: #1F1F1F;
     background: radial-gradient(circle, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9), rgba(31, 51, 31, 1.9));
@@ -69,4 +74,50 @@
 .contactDetails svg {
     color: #FFBF00;
     
+}
+
+@media (min-width: 600px) {
+    .contactSection h3 {
+        font-size: 2rem;
+        margin: 1.5rem;
+    }
+
+    .contactSection p {
+        font-size: 1.5rem;
+        margin: 0 2rem 1rem 2rem;
+    }
+
+    .contactButton {
+        width: 15rem;
+        font-size: 1.4rem;
+        margin: 1.5rem auto;
+    }
+
+    .contactDetails a {
+        height: 3.5rem;
+        margin: 0.5rem 0;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1200px) {
+    .contactSection h3 {
+        font-size: 2.5rem;
+    }
+
+    .contactSection p {
+        font-size: 1.8rem;
+    }
+
+    .contactButton {
+        width: 18rem;
+        font-size: 1.6rem;
+    }
+
+    .contactDetails a {
+        height: 4rem;
+        margin: 1rem 0;
+        width: 75%;
+        font-size: 1.8rem;
+    }
 }

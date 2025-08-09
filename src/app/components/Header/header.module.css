@@ -26,7 +26,7 @@
 
 .headerSection ul {
     display: flex;
-    gap: 2vw;
+    gap: 1.5rem;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -36,5 +36,15 @@
     width: 100%;
     height: auto;
     list-style-type: none;
+}
 
+@media (min-width: 600px) {
+    .headerSection {
+        height: 10%;
+        padding-right: 4rem;
+    }
+    .headerSection ul {
+        font-size: 22px;
+        gap: 2rem;
+    }
 }

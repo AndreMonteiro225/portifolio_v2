@@ -34,3 +34,42 @@
     padding-top: 0.7rem;
     gap: 0.5rem;
 }
+
+@media (min-width: 600px) {
+    .projectsSection {
+        padding: 1rem;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 1.5rem;
+    }
+
+    .projectTitle {
+        font-size: 2rem;
+    }
+
+    .projectLink img {
+        max-width: 100%;
+        height: 15rem;
+    }
+
+    .projectTechnologies {
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 900px) {
+    .projectsSection {
+        width: 70%;
+    }
+
+    .projectTitle {
+        font-size: 2.5rem;
+    }
+
+    .projectLink img {
+        height: 23rem;
+    }
+
+    .projectTechnologies {
+        font-size: 2rem;
+    }
+}

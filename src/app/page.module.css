@@ -85,7 +85,8 @@
 }
 
 .slider {
-    width: 95%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -144,4 +145,50 @@
     scroll-behavior: smooth;
 }
 
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+    .homeSection h1 {
+        font-size: 4.5rem;
+        padding: 2rem 0;
+        width: 85%;
+    }
+    .homeSection h2 {
+        font-size: 2.5rem;
+    }
+    .homeSection p {
+        font-size: 1.8rem;
+        padding: 1.5rem 0;
+    }
+    .contactButton {
+        margin: 2rem auto;
+    }
+    .sliderSection h2 {
+        font-size: 2.5rem;
+        margin: 2rem auto;
+    }
+    .slider img {
+        flex: 0 0 80%;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1024px) {
+    .homeSection h1 {
+        font-size: 5.5rem;
+        padding: 3rem 0;
+        width: 90%;
+    }
+    .homeSection h2 {
+        font-size: 3.5rem;
+    }
+    .homeSection p {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+    .contactButton {
+        width: 15rem;
+        font-size: 1.5rem;
+    }
+    .sliderSection h2 {
+        font-size: 3rem;
+        margin: 3rem auto;
+    }
+}

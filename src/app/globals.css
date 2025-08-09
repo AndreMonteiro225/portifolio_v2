@@ -1,3 +1,15 @@
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+  
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,7 +18,9 @@
 
 body {
   font-family: 'Satoshi', sans-serif;
-  background: linear-gradient(to bottom, #121212, #1F1F1F, #121212);
+  background: linear-gradient(120deg, #221e1e9f, #1F1F1F 40%, #221e1e9f, #121212);
+  background-size: 200% 200%;
+  animation: bgMove 12s ease-in-out infinite alternate;
   color: #EFEFEF;
 }
 
