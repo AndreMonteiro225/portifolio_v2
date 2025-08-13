@@ -10,9 +10,12 @@ export default function Projects({ project }) {
           <h3 className={styles.projectTitle}>{project.titulo}</h3>
           <p className={styles.projectDescription}>{project.descricao}</p>
           <p className={styles.projectLink}>{project.url}</p>
+          <div className={styles.containerTeachnologies}>
           <p className={styles.projectTechnologies}>{project.technologies}</p>
+          </div>
         </article>
       </section>
+      
     </div>
   );
 }

@@ -37,13 +37,25 @@ export default function Home() {
       <About />
         <h2>Meus Projetos</h2>
       <div className={styles.sliderSection}>
-        <section className={styles.slider}
-        style={{ transform: `translateX(-${current * 100}%)`
-        }}>
+        <section className={styles.slider} style={{ transform: `translateX(-${current * 100}%)`}}>
           {projects.map((project, id) => (
+            <div key={project.id} className={styles.slide}>
               <Projects key={project.id} project={projects[id]}  />
+            </div>
             ))}
+
         </section>
+              <div className={styles.slideIndicators}>
+        {projects.map((project, id) => (
+          <div
+            key={id}
+            className={`${styles.projectsNav} ${
+              current === id ? styles.active : ""
+            }`}
+            onClick={() => setCurrent(id)}
+          ></div>
+        ))}
+      </div>
         <button className={styles.previousBtn} onClick={previousSlide}>
           <GrPrevious />
         </button>

@@ -19,7 +19,7 @@
 }
 
 .navbarItem a:hover {
-    font-size: 1.1rem;
+    font-size: 130%;
     transition: 0.5s ease-in-out;
     color: #FFBF00;
 }

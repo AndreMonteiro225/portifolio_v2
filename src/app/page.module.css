@@ -74,23 +74,28 @@
 }
 
 .sliderSection {
-    position: relative;
+    width: 80%;
+    height: auto;
+    max-width: 900px;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
     z-index: 1;
-    overflow:hidden;
 
 }
 
 .sliderSection h2 {
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .slider {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 1.3rem auto;
     display: flex;
     text-align: center;
+    transition: 0.5s ease;
 }
 
 
@@ -98,33 +103,74 @@
 .slider>* {
     display: flex;
     flex: 0 0 auto;
-        
+}
+
+.slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.slideIndicators {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.slideIndicator {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+}
+
+.slideIndicator:hover {
+    background-color: #FFBF00;
+}
+
+.projectsNav {
+    padding: 5px;
+    margin: 0 6px;
+    cursor: pointer;
+    border: black solid 3px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px black;
+    background: linear-gradient(to bottom, #FFBF00 , #1F1F1F);
+    
+}
+
+.projectsNav.active {
+    background: linear-gradient(to bottom, #1F1F1F 20%, #FFBF00 80%);
+    box-shadow: 0 0 8px #FFBF00;
+    transition: all 1s ease-in-out;
+    width: 21px;
+    height: 21px;
 }
 
 .previousBtn,
 .nextBtn {
     background: transparent;
-    color: #FFBF00;
+    color: yellow;
     border: none;
     cursor: pointer;
-    font-size: 1.5rem;
-    z-index: 2;
+    font-size: 2.5rem;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(86%);
+    padding: 1rem;
 }
 
 .previousBtn {
-    width: 40px;
-    left: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(50%);
+    right: 4rem;
 }
 
 .nextBtn {
-    width: 40px;
-    right: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(50%);
+    right: 0;
 }
 
 
@@ -135,42 +181,52 @@
         padding: 2rem 0;
         width: 85%;
     }
+
     .homeSection h2 {
         font-size: 2.5rem;
     }
+
     .homeSection p {
         font-size: 1.8rem;
         padding: 1.5rem 0;
     }
+
     .contactButton {
         margin: 2rem auto;
     }
+
     .sliderSection h2 {
         font-size: 2.5rem;
         margin: 2rem auto;
     }
+
     /* .slider img {
         flex: 0 0 80%;
         max-width: 100%;
     } */
 }
+
 @media (min-width: 1024px) {
     .homeSection h1 {
         font-size: 5.5rem;
         padding: 3rem 0;
         width: 90%;
     }
+
     .homeSection h2 {
         font-size: 3.5rem;
     }
+
     .homeSection p {
         font-size: 2rem;
         padding: 2rem 0;
     }
+
     .contactButton {
         width: 15rem;
         font-size: 1.5rem;
     }
+
     .sliderSection h2 {
         font-size: 3rem;
         margin: 3rem auto;
