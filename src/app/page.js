@@ -11,22 +11,13 @@ import { GrNext } from "react-icons/gr";
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
-  const [fade, setFade] = useState(true);
-
-  const changeSlide = (nextIndex) => {
-    setFade(false);
-    setTimeout(() => {
-      setCurrent(nextIndex);
-      setFade(true);
-    }, 400);
-  };
 
   const nextSlide = () => {
-    changeSlide((current + 1) % projects.length);
+    setCurrent((prev) => (prev + 1) % projects.length);
   };
 
-  const prevSlide = () => {
-    changeSlide((current - 1 + projects.length) % projects.length);
+  const previousSlide = () => {
+    setCurrent((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
   return (
@@ -44,14 +35,16 @@ export default function Home() {
         <a className={styles.contactButton} href="mailto:andremonteiro225@gmail.com">Entre em contato</a>
       </section>
       <About />
-      <div className={styles.sliderSection}>
         <h2>Meus Projetos</h2>
-        <section className={styles.slider}>
-          <div className={fade ? styles.fadeIn : styles.fadeOut}>
-            <Projects project={projects[current]} />
-          </div>
+      <div className={styles.sliderSection}>
+        <section className={styles.slider}
+        style={{ transform: `translateX(-${current * 100}%)`
+        }}>
+          {projects.map((project, id) => (
+              <Projects key={project.id} project={projects[id]}  />
+            ))}
         </section>
-        <button className={styles.previousBtn} onClick={prevSlide}>
+        <button className={styles.previousBtn} onClick={previousSlide}>
           <GrPrevious />
         </button>
         <button className={styles.nextBtn} onClick={nextSlide}>
