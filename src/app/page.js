@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import styles from "./page.module.css";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -24,38 +25,66 @@ export default function Home() {
     <>
       <section className={styles.homeSection}>
         <h2 className={styles.title}>Olá, meu nome é</h2>
-        <h2 className={`${styles.title} ${styles.line}`}>André Monteiro Rachel</h2>
+        <h2 className={`${styles.title} ${styles.line}`}>
+          André Monteiro Rachel
+        </h2>
+        <section className={styles.sectionHero}>
         <h1>Eu construo coisas para a web.</h1>
-        <p>
-          Sou um desenvolvedor de software apaixonado por transformar ideias
-          complexas em experiências digitais elegantes e intuitivas.
-          Especializado em criar aplicações web modernas, responsivas e focadas
-          no usuário.
-        </p>
-        <a className={styles.contactButton} href="mailto:andremonteiro225@gmail.com">Entre em contato</a>
+        <div className={styles.containerHero}>
+          <div className={styles.heroBox}>
+            <Image
+              src={"/restaurante_portifolio.png"}
+              width={600}
+              height={300}
+              alt="xyz"
+            />
+          </div>
+          <div className={styles.heroBox}>
+            <Image
+              src={"/agencia_design_portifolio.png"}
+              width={600}
+              height={300}
+              alt="asd"
+            />
+          </div>
+          </div>
+          <div className={styles.containerHero}>
+            <Image
+              src={"/foto_site_uidi.png"}
+              width={600}
+              height={300}
+              alt="asd"
+            />
+        </div>
+        </section>
+        <a className={styles.contactButton} href="tel:+5511988844661">
+          Entre em contato
+        </a>
       </section>
       <About />
-        <h2>Meus Projetos</h2>
+      <h2>Meus Projetos</h2>
       <div className={styles.sliderSection}>
-        <section className={styles.slider} style={{ transform: `translateX(-${current * 100}%)`}}>
+        <section
+          className={styles.slider}
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
           {projects.map((project, id) => (
             <div key={project.id} className={styles.slide}>
-              <Projects key={project.id} project={projects[id]}  />
+              <Projects key={project.id} project={projects[id]} />
             </div>
-            ))}
-
+          ))}
         </section>
-              <div className={styles.slideIndicators}>
-        {projects.map((project, id) => (
-          <div
-            key={id}
-            className={`${styles.projectsNav} ${
-              current === id ? styles.active : ""
-            }`}
-            onClick={() => setCurrent(id)}
-          ></div>
-        ))}
-      </div>
+        <div className={styles.slideIndicators}>
+          {projects.map((project, id) => (
+            <div
+              key={id}
+              className={`${styles.projectsNav} ${
+                current === id ? styles.active : ""
+              }`}
+              onClick={() => setCurrent(id)}
+            ></div>
+          ))}
+        </div>
         <button className={styles.previousBtn} onClick={previousSlide}>
           <GrPrevious />
         </button>

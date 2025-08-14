@@ -1,13 +1,14 @@
 .homeSection {
     padding: 5rem 0 1.5rem 0;
-    margin: 1.5rem;
+
     display: flex;
     flex-direction: column;
 }
 
 .homeSection h1 {
+    margin: 1.5rem;
     font-size: 3rem;
-    margin: 1rem 0;
+
     background: linear-gradient(to right, #FFBF00, #D4D4D4 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -18,7 +19,7 @@
 
 .homeSection h2 {
     font-size: 2rem;
-    margin: 0.5rem 0;
+    margin: 1.5rem;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -28,6 +29,65 @@
     font-size: 1.5rem;
     text-align: center;
     padding-bottom: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+
+.sectionHero {
+    height: 40rem;
+    margin-bottom: 10rem;
+    filter: blur(1);
+}
+
+.sectionHero img {
+    object-fit: cover;
+    height: 20rem;
+    
+}
+
+.containerHero:before {
+    content: "Seu comércio mais profisional";
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    background-color: black;
+    color:#FFBF00;
+    font-style: italic;
+    opacity: 0.6;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 0.5rem;
+}
+
+
+.containerHero {
+    display: flex;
+    height: 20rem;
+    position: relative;
+}
+
+.heroBox img {
+    filter: blur(2);
+    width: 100%;
+
+}
+
+.homeSection .containerHero:last-of-type img {
+    width: 100%;
+}
+
+
+.heroBox {
+    width: 50%;
+}
+
+.heroBox img {
+    width: 100%;
+
 }
 
 .title {
@@ -50,6 +110,7 @@
     bottom: 0;
     left: 0;
 }
+
 
 
 .contactButton {
@@ -139,8 +200,8 @@
     border: black solid 3px;
     border-radius: 50%;
     box-shadow: 0 0 8px black;
-    background: linear-gradient(to bottom, #FFBF00 , #1F1F1F);
-    
+    background: linear-gradient(to bottom, #FFBF00, #1F1F1F);
+
 }
 
 .projectsNav.active {
@@ -157,11 +218,11 @@
     color: yellow;
     border: none;
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     z-index: 10;
     position: absolute;
     top: 50%;
-    transform: translateY(86%);
+    transform: translateY(98%);
     padding: 1rem;
 }
 
