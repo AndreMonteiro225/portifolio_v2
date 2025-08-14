@@ -33,6 +33,7 @@ export default function Home() {
         <div className={styles.containerHero}>
           <div className={styles.heroBox}>
             <Image
+              style={{filter: `blur(1.5px)`}}
               src={"/restaurante_portifolio.png"}
               width={600}
               height={300}
@@ -41,6 +42,7 @@ export default function Home() {
           </div>
           <div className={styles.heroBox}>
             <Image
+              style={{filter: `blur(1.5px)`}}
               src={"/agencia_design_portifolio.png"}
               width={600}
               height={300}
@@ -50,6 +52,7 @@ export default function Home() {
           </div>
           <div className={styles.containerHero}>
             <Image
+             style={{filter: `blur(1.5px)`}}
               src={"/foto_site_uidi.png"}
               width={600}
               height={300}
@@ -62,8 +65,8 @@ export default function Home() {
         </a>
       </section>
       <About />
-      <h2>Meus Projetos</h2>
       <div className={styles.sliderSection}>
+      <h2>Meus Projetos</h2>
         <section
           className={styles.slider}
           style={{ transform: `translateX(-${current * 100}%)` }}

@@ -44,7 +44,7 @@
     align-items: center;
     text-align: center;
     gap: 0.5rem;
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
 
 }
 
@@ -67,8 +67,8 @@
     cursor: pointer;
     background-color: #1F1F1F;
     background: radial-gradient(circle, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9));
-    width: 85%;
-    padding: 0.4rem;
+    width: 95%;
+    padding: 0.8rem 0.4rem;
 }
 
 .contactDetails svg {
@@ -115,7 +115,7 @@
     }
 
     .contactDetails a {
-        height: 4rem;
+        height: 3rem;
         margin: 1rem 0;
         width: 75%;
         font-size: 1.8rem;

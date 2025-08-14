@@ -9,12 +9,14 @@
 .aboutSection p {
     font-size: 1.5rem;
     margin: 1rem auto;
-    text-align: left;
+    text-align: center;
     line-height: 2rem;
 }
 .aboutSection h2 {
-    font-size: 2rem;
-    margin: 0.5rem 0;
+    width: 100%;
+    font-size: 2.2rem;
+    margin: 0.5rem auto;
+    text-align: left;
 }
 .aboutSection {
   scroll-margin-top: 80px;

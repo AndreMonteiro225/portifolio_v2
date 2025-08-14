@@ -31,14 +31,10 @@ a {
   color: #B3B3B3;
 }
 
-h1 {
-  color: #FFBF00;
-  font-size: 2.5rem;
-  margin: 1.5rem 0.5rem;
-}
+
 
 h2 {
-  color: #D4D4D4;
+  color: rgb(215, 214, 214);
 }
 
 h3 {

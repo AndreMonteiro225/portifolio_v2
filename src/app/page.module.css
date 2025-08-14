@@ -6,8 +6,8 @@
 }
 
 .homeSection h1 {
-    margin: 1.5rem;
-    font-size: 3rem;
+    margin: 1.3rem 1rem;
+    font-size: 2.4rem;
 
     background: linear-gradient(to right, #FFBF00, #D4D4D4 50%);
     -webkit-background-clip: text;
@@ -18,11 +18,12 @@
 
 
 .homeSection h2 {
-    font-size: 2rem;
-    margin: 1.5rem;
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+    white-space: wrap;
+
+
 }
 
 .homeSection p {
@@ -36,6 +37,7 @@
 
 .sectionHero {
     height: 40rem;
+    width: 100%;
     margin-bottom: 10rem;
     filter: blur(1);
 }
@@ -43,7 +45,7 @@
 .sectionHero img {
     object-fit: cover;
     height: 20rem;
-    
+    width: 100%
 }
 
 .containerHero:before {
@@ -52,7 +54,7 @@
     top: 6rem;
     right: 0;
     background-color: black;
-    color:#FFBF00;
+    color: #FFBF00;
     font-style: italic;
     opacity: 0.6;
     width: 100%;
@@ -60,7 +62,9 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    padding-right: 0.5rem;
+    padding-right: 1.2rem;
+    z-index: 8;
+    font-size: 18px;
 }
 
 
@@ -71,7 +75,6 @@
 }
 
 .heroBox img {
-    filter: blur(2);
     width: 100%;
 
 }
@@ -101,13 +104,12 @@
 
 .line::before {
     content: "";
-    width: calc(100vw - 2.5rem);
+    width: 100vw;
     height: 5px;
     background: linear-gradient(to right, #FFBF00, black 70%, #D4D4D4);
-    margin-right: 0.5rem;
     margin-top: 0.7rem;
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 0;
 }
 
@@ -126,6 +128,9 @@
     width: 13rem;
     margin: 0.5rem auto;
     text-decoration: none;
+    z-index: 8;
+    opacity: 0.9;
+    transition: 0.3s ease-in-out;
 }
 
 .contactButton:hover {
@@ -135,19 +140,17 @@
 }
 
 .sliderSection {
-    width: 80%;
-    height: auto;
-    max-width: 900px;
-    margin: 0 auto;
+    width: 90%;
+    height: fit-content;
+    margin: 40px auto;
     position: relative;
     overflow: hidden;
-    z-index: 1;
-
+    z-index: 3;
 }
 
 .sliderSection h2 {
-    text-align: center;
-    font-size: 2rem;
+    text-align: left;
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
 }
 
@@ -218,12 +221,13 @@
     color: yellow;
     border: none;
     cursor: pointer;
-    font-size: 2.7rem;
-    z-index: 10;
+    font-size: 2rem;
+    z-index: 8;
     position: absolute;
-    top: 50%;
+    bottom: 114px;
     transform: translateY(98%);
     padding: 1rem;
+    height: 2rem;
 }
 
 .previousBtn {
@@ -235,12 +239,42 @@
 }
 
 
+@media(min-width: 361px) {
+
+    .sectionHero {
+        width: 100%;
+
+    }
+
+    .containerHero {
+        width: 100%;
+    }
+
+    .heroBox {
+        width: 100%;
+    }
+
+    .sliderSection {
+        width: 97%;
+    }
+
+    .previousBtn,
+    .nextBtn {
+        bottom: 108px;
+
+    }
+
+    .containerHero:before {
+        font-size: 22px;
+        height: 18%;
+    }
+}
+
 
 @media (min-width: 600px) {
     .homeSection h1 {
-        font-size: 4.5rem;
+        font-size: 4rem;
         padding: 2rem 0;
-        width: 85%;
     }
 
     .homeSection h2 {
@@ -258,13 +292,28 @@
 
     .sliderSection h2 {
         font-size: 2.5rem;
-        margin: 2rem auto;
+        margin: 1rem;
     }
 
-    /* .slider img {
+    .slider img {
         flex: 0 0 80%;
         max-width: 100%;
-    } */
+    }
+
+    .previousBtn,
+    .nextBtn {
+       top: 50vh;
+       transform: none;
+        
+    }
+    .nextBtn {
+        transform: translateX(15%);
+    }
+
+    .previousBtn {
+        left: 0;
+        transform: translateX(-46%);
+    }
 }
 
 @media (min-width: 1024px) {
