@@ -1,6 +1,6 @@
 .projectsSection {
     width: 100%;
-    height: 56vh;
+    height: fit-content;
     transition: transform 0.5s ease-in-out;
     padding: 0.5rem;
     border: 1px solid #FFBF00;
@@ -33,7 +33,7 @@
 
 .projectLink img {
     width: 100% !important;
-    height: auto;
+    height: fit-content;
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
@@ -58,6 +58,7 @@
     .projectsSection {
         height: fit-content;
     }
+    
 }
 
 @media (min-width: 500px) {
