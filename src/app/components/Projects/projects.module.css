@@ -32,7 +32,7 @@
 
 
 .projectLink img {
-    width: 100% !important;
+    width: 100%;
     height: fit-content;
     object-fit: cover;
     border-radius: 8px;
@@ -77,9 +77,19 @@
     }
 }
 
-@media (min-width: 600px) {
-    .projectsSection {
-        margin: 2rem 3rem;
+@media(min-width: 600px) {
+    .projectsSection{
+        padding: 1rem;
+        flex: 1;
+        margin: 2rem 4rem;
+    }
+    .projectLink img {
+        max-width: 100%;
     }
     
+
 }
+
+
+    
+

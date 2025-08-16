@@ -297,49 +297,28 @@
     }
 
     .slider img {
-        flex: 0 0 80%;
+        flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .sliderSection {
+        position: relative;
+        
     }
 
     .previousBtn,
     .nextBtn {
-       top: 50vh;
+       top: 50%;
        transform: none;
-        
     }
     .nextBtn {
-        transform: translateX(15%);
+        right: 5px;
+        left: auto;
     }
 
     .previousBtn {
-        left: 0;
-        transform: translateX(-46%);
+        left: 5px;
+        right: auto;
     }
 }
 
-@media (min-width: 1024px) {
-    .homeSection h1 {
-        font-size: 5.5rem;
-        padding: 3rem 0;
-        width: 90%;
-    }
-
-    .homeSection h2 {
-        font-size: 3.5rem;
-    }
-
-    .homeSection p {
-        font-size: 2rem;
-        padding: 2rem 0;
-    }
-
-    .contactButton {
-        width: 15rem;
-        font-size: 1.5rem;
-    }
-
-    .sliderSection h2 {
-        font-size: 3rem;
-        margin: 3rem auto;
-    }
-}
