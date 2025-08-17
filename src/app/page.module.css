@@ -7,7 +7,6 @@
 .homeSection h1 {
     margin: 1.3rem 1rem;
     font-size: 2.4rem;
-
     background: linear-gradient(to right, #FFBF00, #D4D4D4 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,7 +47,7 @@
 }
 
 .containerHero:before {
-    content: "Seu comércio mais profisional";
+    content: "Seu comércio mais profissional";
     position: absolute;
     top: 6rem;
     right: 0;
@@ -66,6 +65,9 @@
     font-size: 18px;
 }
 
+.containerHero:last-of-type::before {
+    content: "A ferramenta que pode trazer mais resultados para você";
+}
 
 .containerHero {
     display: flex;
@@ -139,7 +141,7 @@
 }
 
 .sliderSection {
-    
+
     width: 90%;
 
     height: fit-content;
@@ -225,7 +227,7 @@
     font-size: 2rem;
     z-index: 8;
     position: absolute;
-    bottom: 114px;
+    bottom: 20vh;
     transform: translateY(98%);
     padding: 1rem;
     height: 2rem;
@@ -255,21 +257,17 @@
         width: 100%;
     }
 
-    .sliderSection {
-        width: 97%;
-    }
 
-    .previousBtn,
-    .nextBtn {
-        bottom: 108px;
 
-    }
 
     .containerHero:before {
         font-size: 22px;
         height: 18%;
     }
+
+    
 }
+
 
 
 @media (min-width: 600px) {
@@ -303,14 +301,15 @@
 
     .sliderSection {
         position: relative;
-        
+
     }
 
     .previousBtn,
     .nextBtn {
-       top: 50%;
-       transform: none;
+        top: 50%;
+        transform: none;
     }
+
     .nextBtn {
         right: 5px;
         left: auto;
@@ -321,4 +320,3 @@
         right: auto;
     }
 }
-

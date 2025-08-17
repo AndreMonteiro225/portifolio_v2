@@ -58,3 +58,14 @@
         gap: 2.5rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .headerSection {
+        height: 13%;
+    }
+    
+    .headerSection ul {
+        font-size: 25px;
+    }
+
+}

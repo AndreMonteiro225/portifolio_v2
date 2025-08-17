@@ -45,38 +45,38 @@ export default function Skills() {
           <h3>Back-End</h3>
           <li>
             <RiNodejsLine />
-            Node.js
+            <p>Node.js</p>
           </li>
           <li>
             <SiExpress />
-            Express.js
+            <p>Express.js</p>
           </li>
           <li>
             <TbSql />
-            SQL
+            <p>SQL</p>
           </li>
           <li>
             <RiNextjsFill />
-            Next.js
+            <p>Next.js</p>
           </li>
         </ul>
         <ul>
           <h3>Ferramentas</h3>
           <li>
             <SiMysql />
-            MySQL
+            <p>MySQL</p>
           </li>
           <li>
             <FaGitAlt />
-            Git
+           <p> Git</p>
           </li>
           <li>
             <FaGithub />
-            GitHub
+            <p>GitHub</p>
           </li>
           <li>
             <IoLogoVercel />
-            Vercel
+            <p>Vercel</p>
           </li>
         </ul>
       </div>
