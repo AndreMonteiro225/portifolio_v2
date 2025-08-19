@@ -14,14 +14,15 @@
     font-size: 2rem;
 }
 
-.skillksContainer {
+.skillsContainer {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .skillsSection ul {
     display: flex;
-    
+    flex-direction:column;
     padding: 2rem 0 2rem 0;
     margin: 1rem auto;
     gap: 1rem;
@@ -32,6 +33,7 @@
     border-image: linear-gradient(90deg, #FFBF00, #D4D4D4, black) 1;
     border-radius: 0.5rem;
     margin: 2rem auto;
+    width: 100%;
 }
 
 .skillsSection h3 {
@@ -49,9 +51,12 @@
     
 }
 
-.skillsSection ul:hover {
+.skillsContainer ul:hover {
     color: #FFBF00;
-    transition: 0.3s ease-in-out;
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+    background-color: #FFBF00;
+    box-shadow: 1px 3px 12px 5px #FFBF00;
 }
 
 @media (min-width: 600px) {
@@ -105,8 +110,8 @@
     }
     .skillsContainer {
         display: flex;
-        justify-content: center;
-        
+        justify-content:space-evenly;
+        flex-direction: row;
     }
     
     .skillsContainer ul {
@@ -118,6 +123,7 @@
 
     @media (min-width: 1200px) {
         .skillsContainer ul {
+            
             width: calc((100% / 3) - 5.5rem);
         }
     }

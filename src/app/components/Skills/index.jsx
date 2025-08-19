@@ -21,62 +21,62 @@ export default function Skills() {
         <ul>
           <h3>Front-End</h3>
           <li>
+            <p>HTML</p>
             <IoLogoHtml5 />
-            HTML
           </li>
           <li>
+            <p>CSS</p>
             <IoLogoCss3 />
-            CSS
           </li>
           <li>
+            <p>JavaScript</p>
             <RiJavascriptFill />
-            JavaScript
           </li>
           <li>
+            <p>Next.js</p>
             <RiNextjsFill />
-            Next.js
           </li>
           <li>
+            <p>React</p>
             <FaReact />
-            React
           </li>
         </ul>
         <ul>
           <h3>Back-End</h3>
           <li>
-            <RiNodejsLine />
             <p>Node.js</p>
+            <RiNodejsLine />
           </li>
           <li>
-            <SiExpress />
             <p>Express.js</p>
+            <SiExpress />
           </li>
           <li>
-            <TbSql />
             <p>SQL</p>
+            <TbSql />
           </li>
           <li>
-            <RiNextjsFill />
             <p>Next.js</p>
+            <RiNextjsFill />
           </li>
         </ul>
         <ul>
           <h3>Ferramentas</h3>
           <li>
-            <SiMysql />
             <p>MySQL</p>
+            <SiMysql />
           </li>
           <li>
-            <FaGitAlt />
            <p> Git</p>
+            <FaGitAlt />
           </li>
           <li>
-            <FaGithub />
             <p>GitHub</p>
+            <FaGithub />
           </li>
           <li>
-            <IoLogoVercel />
             <p>Vercel</p>
+            <IoLogoVercel />
           </li>
         </ul>
       </div>

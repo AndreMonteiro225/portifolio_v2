@@ -16,8 +16,23 @@
     width: 100%;
     font-size: 2.2rem;
     margin: 0.5rem auto;
-    text-align: left;
+    text-align: center;
 }
 .aboutSection {
   scroll-margin-top: 80px;
+}
+
+@media (min-width: 800px){
+    .aboutSection {
+        margin: 1rem 4rem;
+    }
+    .aboutSection h2 {
+    font-size: 40px;
+    text-align: left;
+    margin: 1rem;
+    }
+    .aboutSection p {
+        letter-spacing: 1.5px;
+        font-size: 26px;
+    }
 }

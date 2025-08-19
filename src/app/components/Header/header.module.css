@@ -20,8 +20,8 @@
 }
 
 .navbarItem a:hover {
-    font-size: 130%;
-    transition: 0.5s ease-in-out;
+    font-size: 105%;
+    transition: 0.2s ease-in-out;
     color: #FFBF00;
 }
 
@@ -61,7 +61,7 @@
 
 @media (min-width: 1024px) {
     .headerSection {
-        height: 13%;
+        height: 11%;
     }
     
     .headerSection ul {
