@@ -9,7 +9,7 @@ export default function Header() {
             <nav className={styles.navbar}>
                 <ul className={styles.navbarList}>
                     <li className={styles.navbarItem}><a href='#about'><MdOutlineEmail/></a></li>
-                    <li className={styles.navbarItem}><a href='#projects'><FaWhatsapp/></a></li>
+                    <li className={styles.navbarItem}><a href={`https://wa.me/5511988844661?text=${encodeURIComponent("Olá, gostaria de mais informações sobre como a tecnologia pode me ajudar a lucrar mais.")}`}><FaWhatsapp/></a></li>
                     <li className={styles.navbarItem}><a href='#skills'><FaGithub/></a></li>
                     <li className={styles.navbarItem}><a href='#contact'><FaLinkedin/></a></li>
                 </ul>

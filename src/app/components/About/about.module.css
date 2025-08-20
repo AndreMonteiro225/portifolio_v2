@@ -22,6 +22,8 @@
   scroll-margin-top: 80px;
 }
 .contactButton {
+    display:flex;
+    align-items: center;
     background-color: #1F1F1F;
     background: radial-gradient(circle, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9), rgba(31, 51, 31, 1.9));
     padding: 0.7rem 1rem;
@@ -36,6 +38,7 @@
     z-index: 8;
     opacity: 0.9;
     transition: 0.3s ease-in-out;
+    gap: 7px;
 }
 
 .contactButton:hover {
@@ -43,6 +46,7 @@
     color: #FCFDFD;
     transition: 0.3s ease-in-out;
 }
+
 
 @media (min-width: 600px) {
     .aboutSection {
