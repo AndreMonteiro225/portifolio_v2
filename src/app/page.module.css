@@ -1,12 +1,12 @@
 .homeSection {
-    padding: 6.5rem 0;
+    margin: 6.5rem 0 1rem 0;
     display: flex;
     flex-direction: column;
 }
 
 .homeSection h1 {
     margin: 1.3rem 1rem;
-    font-size: 2.4rem;
+    font-size: 2rem;
     background: linear-gradient(to right, #FFBF00, #D4D4D4 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -34,25 +34,44 @@
 
 
 .sectionHero {
-    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
     width: 100%;
-    margin-bottom: 10rem;
-    filter: blur(1);
+    justify-content: center;
+    align-items: center;
 }
 
 .sectionHero img {
     object-fit: cover;
-    height: 20rem;
-    width: 100%
+    width: 100%;
+    height: 100%;
+    filter: blur(0);
+    
 }
 
+.containerHero:last-of-type{
+    border-bottom: 1px solid #FFBF00;
+}
+.containerHero:first-of-type{
+    border-top: 1px solid #FFBF00;
+}
 .containerHero {
     display: flex;
-    height: 20rem;
+    /* height: 10rem; */
     position: relative;
+    background: linear-gradient(to top, #1F1F1F, whitesmoke 48% 53%, #1F1F1F);
 }
+
+.containerHero img {
+        padding: 20px;
+        width: 100%;
+        object-fit: contain;
+    
+}
+
 .containerHero:before {
-    content: "Seu comércio mais profissional";
+    content: "Design profissional";
     position: absolute;
     top: 6rem;
     right: auto;
@@ -60,24 +79,31 @@
     background-color: black;
     color: #FFBF00;
     font-style: italic;
-    opacity: 0.63;
+    font-weight: bold;
+    opacity: 0.8;
     width: 100%;
-    height: 20%;
+    height: 22%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 8;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-.containerHero:last-of-type::before {
-    content: "A ferramenta que pode trazer mais resultados para você";
-}
 
 
 .heroBox img {
     width: 100%;
 
+}
+
+.heroBox {
+    width: 50%;
+}
+
+.containerHero:last-of-type::before {
+    content: "A tecnologia pode ajudar a aparecer pro mercado e a se destacar.";
+    height: 30%;
 }
 
 .homeSection .containerHero:last-of-type img {
@@ -85,14 +111,7 @@
 }
 
 
-.heroBox {
-    width: 50%;
-}
 
-.heroBox img {
-    width: 100%;
-
-}
 
 .title {
     font-size: 1.4rem;
@@ -112,32 +131,6 @@
     position: absolute;
     bottom: -3px;
     left: 0;
-}
-
-
-
-.contactButton {
-    background-color: #1F1F1F;
-    background: radial-gradient(circle, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9), rgba(31, 51, 31, 1.9));
-    padding: 0.7rem 1rem;
-    color: #D4D4D4;
-    border: solid 1px #FFBF00;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: bold;
-    width: 13rem;
-    margin: 0.5rem auto;
-    text-decoration: none;
-    z-index: 8;
-    opacity: 0.9;
-    transition: 0.3s ease-in-out;
-}
-
-.contactButton:hover {
-    background-color: #FFBF00;
-    color: #FCFDFD;
-    transition: 0.3s ease-in-out;
 }
 
 .sliderSection {
@@ -220,17 +213,34 @@
 
 .previousBtn,
 .nextBtn {
-    background: transparent;
     color: yellow;
     border: none;
     cursor: pointer;
     font-size: 2rem;
-    z-index: 8;
+    z-index: 10;
     position: absolute;
-    bottom: 18vh;
-    transform: translateY(98%);
-    padding: 1rem;
-    height: 2rem;
+    top: 50%;
+    border: black 2px solid;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    border-radius: 25%;
+}
+
+.nextBtn {
+    right: -2px;
+    background: linear-gradient(to left, #1F1F1F, whitesmoke);
+
+
+}
+
+.previousBtn {
+    left: -2px;
+    background: linear-gradient(to left, whitesmoke 15%, #1F1F1F);
+
 }
 
 .previousBtn {
@@ -244,35 +254,21 @@
 
 @media(min-width: 361px) {
 
-    .sectionHero {
-        width: 100%;
-
-    }
-
-    .containerHero {
-        width: 100%;
-    }
-
-    .heroBox {
-        width: 100%;
-    }
-
-
-
-
     .containerHero:before {
         font-size: 22px;
-        height: 18%;
+
     }
 
-    
 }
 
-
-
 @media (min-width: 600px) {
-    /* .homeSection{
-    } */
+
+.sectionHero img {
+    object-fit: contain;
+    width: 100%;
+    padding: 2rem;
+}
+
     .homeSection h1 {
         font-size: 4rem;
         padding: 2rem 0;
@@ -287,9 +283,7 @@
         padding: 1.5rem 0;
     }
 
-    .contactButton {
-        margin: 2rem auto;
-    }
+    
 
     .sliderSection h2 {
         font-size: 2.5rem;
@@ -303,7 +297,6 @@
 
     .sliderSection {
         position: relative;
-
     }
 
     .previousBtn,

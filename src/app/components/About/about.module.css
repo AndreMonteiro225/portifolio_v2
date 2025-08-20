@@ -21,11 +21,46 @@
 .aboutSection {
   scroll-margin-top: 80px;
 }
+.contactButton {
+    background-color: #1F1F1F;
+    background: radial-gradient(circle, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9), rgba(31, 51, 31, 1.9));
+    padding: 0.7rem 1rem;
+    color: #D4D4D4;
+    border: solid 1px #FFBF00;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem auto 1rem auto;
+    text-decoration: none;
+    z-index: 8;
+    opacity: 0.9;
+    transition: 0.3s ease-in-out;
+}
 
-@media (min-width: 800px){
+.contactButton:hover {
+    background-color: #FFBF00;
+    color: #FCFDFD;
+    transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 600px) {
     .aboutSection {
-        margin: 1rem 4rem;
+        margin: 4rem 2rem;
     }
+    .aboutSection h2 {
+        font-size: 40px;
+        text-align: left;
+        margin: 1rem;
+    }
+    .aboutSection p {
+        letter-spacing: 1.5px;
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 757px){
+   
     .aboutSection h2 {
     font-size: 40px;
     text-align: left;
@@ -34,5 +69,6 @@
     .aboutSection p {
         letter-spacing: 1.5px;
         font-size: 26px;
+        margin: 1rem;
     }
 }

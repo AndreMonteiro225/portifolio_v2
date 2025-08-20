@@ -29,7 +29,7 @@ export default function Home() {
           André Monteiro Rachel
         </h2>
         <section className={styles.sectionHero}>
-        <h1>Eu construo coisas para a web.</h1>
+        <h1>Código limpo, sites rápidos. Soluções web full-stack que ajudam empresas a crescer.</h1>
         <div className={styles.containerHero}>
           <div className={styles.heroBox}>
             <Image
@@ -60,11 +60,11 @@ export default function Home() {
             />
         </div>
         </section>
-        <a className={styles.contactButton} href="tel:+5511988844661">
-          Entre em contato
-        </a>
+         
       </section>
+      <div className={styles.aboutSection}>
       <About />
+      </div>
       <div className={styles.sliderSection}>
       <h2>Meus Projetos</h2>
         <section

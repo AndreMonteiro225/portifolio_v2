@@ -7,6 +7,9 @@ export default function About() {
       <p>
         Sou um desenvolvedor de software e gosto transformar ideias complexas em experiências digitais elegantes e intuitivas. Especializado em criar aplicações web modernas, responsivas e focadas no usuário.
         </p>
+       <a className={styles.contactButton} href="tel:+5511988844661">
+            Entre em contato
+          </a>
     </div>
   );
 }
