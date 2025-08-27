@@ -1,17 +1,14 @@
 import styles from './header.module.css';
-import { MdOutlineEmail } from "react-icons/md";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+
 export default function Header() {
     return(
         <div className={styles.headerSection}>
             <nav className={styles.navbar}>
                 <ul className={styles.navbarList}>
-                    <li className={styles.navbarItem}><a href='#about'><MdOutlineEmail/></a></li>
-                    <li className={styles.navbarItem}><a href={`https://wa.me/5511988844661?text=${encodeURIComponent("Olá, gostaria de mais informações sobre como a tecnologia pode me ajudar a lucrar mais.")}`}><FaWhatsapp/></a></li>
-                    <li className={styles.navbarItem}><a href='#skills'><FaGithub/></a></li>
-                    <li className={styles.navbarItem}><a href='#contact'><FaLinkedin/></a></li>
+                    <li className={styles.navbarItem}><a href='#about'>Sobre</a></li>
+                    <li className={styles.navbarItem}><a href='#projects'>Projetos</a></li>
+                    <li className={styles.navbarItem}><a href='#skills'>Habilidades</a></li>
+                    <li className={styles.navbarItem}><a href='#contact'>Contato</a></li>
                 </ul>
             </nav>
         </div>

@@ -11,9 +11,7 @@ export default function Contact() {
         <h2>Qual o Próximo Passo?</h2>
         <h3>Vamos Conversar</h3>
         <p>
-          Estou sempre aberto a novas oportunidades e colaborações. Se você tem
-          um projeto em mente, e quer saber como a tecnologia pode te ajudar,
-          entre em contato!
+          Entenda como a tecnologia pode te fazer lucrar, entre em contato faça o orçamento do seu site ou aplicação web.
         </p>
         <a className={styles.contactButton} href={`https://wa.me/5511988844661?text=${encodeURIComponent("Olá, gostaria de mais informações sobre como a tecnologia pode me ajudar a lucrar mais.")}`}><FaWhatsapp/>Entre em contato</a>
       </section>

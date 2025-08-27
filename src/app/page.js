@@ -9,6 +9,10 @@ import Contact from "./components/Contact";
 import { projects } from "./components/data/data.js";
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
@@ -28,45 +32,79 @@ export default function Home() {
         <h2 className={`${styles.title} ${styles.line}`}>
           André Monteiro Rachel
         </h2>
-        <section className={styles.sectionHero}>
-        <h1>Código limpo, sites rápidos. Soluções web full-stack que ajudam empresas a crescer.</h1>
-        <div className={styles.containerHero}>
-          <div className={styles.heroBox}>
-            <Image
-              style={{filter: `blur(1.5px)`}}
-              src={"/restaurante_portifolio.png"}
-              width={600}
-              height={300}
-              alt="xyz"
-            />
-          </div>
-          <div className={styles.heroBox}>
-            <Image
-              style={{filter: `blur(1.5px)`}}
-              src={"/agencia_design_portifolio.png"}
-              width={600}
-              height={300}
-              alt="asd"
-            />
-          </div>
-          </div>
-          <div className={styles.containerHero}>
-            <Image
-             style={{filter: `blur(1.5px)`}}
-              src={"/foto_site_uidi.png"}
-              width={600}
-              height={300}
-              alt="asd"
-            />
+        <div className={styles.backImg}>
+          <section className={styles.sectionHero}>
+            <h1>
+              Código limpo, sites rápidos. Soluções web full-stack que ajudam
+              empresas a crescer.
+            </h1>
+            <div className={styles.containerHero}>
+              <div className={styles.heroBox}>
+                <Image
+                  style={{ filter: `blur(1.5px)` }}
+                  src={"/restaurante_portifolio.png"}
+                  width={600}
+                  height={130}
+                  alt="xyz"
+                />
+              </div>
+              <div className={styles.heroBox}>
+                <Image
+                  style={{ filter: `blur(1.5px)` }}
+                  src={"/agencia_design_portifolio.png"}
+                  width={600}
+                  height={130}
+                  alt="asd"
+                />
+              </div>
+            </div>
+            <div className={styles.containerHero}>
+              <Image
+                style={{ filter: `blur(1.5px)` }}
+                src={"/foto_site_uidi.png"}
+                width={600}
+                height={250}
+                alt="asd"
+              />
+            </div>
+          </section>
         </div>
-        </section>
-         
       </section>
       <div className={styles.aboutSection}>
-      <About />
+        <About />
+        <div className={styles.aboutParallax}>
+          <nav className={styles.navbar}>
+            <ul className={styles.navbarList}>
+              <li className={styles.navbarItem}>
+                <a href="mailto:andremonteiro225@gmail.com">
+                  <MdOutlineEmail />
+                </a>
+              </li>
+              <li className={styles.navbarItem}>
+                <a
+                  href={`https://wa.me/5511988844661?text=${encodeURIComponent(
+                    "Olá, gostaria de mais informações sobre como a tecnologia pode me ajudar a lucrar mais."
+                  )}`}
+                >
+                  <FaWhatsapp />
+                </a>
+              </li>
+              <li className={styles.navbarItem}>
+                <a href="https://github.com/AndreMonteiro225/">
+                  <FaGithub />
+                </a>
+              </li>
+              <li className={styles.navbarItem}>
+                <a href="https://www.linkedin.com/in/andr%C3%A9-monteiro-rachel-3a0429240/">
+                  <FaLinkedin />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div className={styles.sliderSection}>
-      <h2>Meus Projetos</h2>
+        <h2>Meus Projetos</h2>
         <section
           className={styles.slider}
           style={{ transform: `translateX(-${current * 100}%)` }}
