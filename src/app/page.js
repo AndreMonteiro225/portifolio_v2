@@ -41,16 +41,16 @@ export default function Home() {
             <div className={styles.containerHero}>
               <div className={styles.heroBox}>
                 <Image
-                  style={{ filter: `blur(1.5px)` }}
                   src={"/restaurante_portifolio.png"}
                   width={200}
                   height={130}
                   alt="xyz"
+                  objectFit="cover"
                 />
               </div>
               <div className={styles.heroBox}>
                 <Image
-                  style={{ filter: `blur(1.5px)` }}
+                  
                   src={"/agencia_design_portifolio.png"}
                   width={200}
                   height={130}
@@ -60,9 +60,8 @@ export default function Home() {
             </div>
             <div className={styles.containerHero}>
               <Image
-                style={{ filter: `blur(1.5px)` }}
-                src={"/foto_site_uidi.png"}
-                width={600}
+                src={"/heroImg1.webp"}
+                width={200}
                 height={150}
                 alt="asd"
               />
