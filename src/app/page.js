@@ -43,7 +43,7 @@ export default function Home() {
                 <Image
                   style={{ filter: `blur(1.5px)` }}
                   src={"/restaurante_portifolio.png"}
-                  width={600}
+                  width={200}
                   height={130}
                   alt="xyz"
                 />
@@ -52,7 +52,7 @@ export default function Home() {
                 <Image
                   style={{ filter: `blur(1.5px)` }}
                   src={"/agencia_design_portifolio.png"}
-                  width={600}
+                  width={200}
                   height={130}
                   alt="asd"
                 />
@@ -63,7 +63,7 @@ export default function Home() {
                 style={{ filter: `blur(1.5px)` }}
                 src={"/foto_site_uidi.png"}
                 width={600}
-                height={250}
+                height={150}
                 alt="asd"
               />
             </div>
@@ -82,6 +82,7 @@ export default function Home() {
               </li>
               <li className={styles.navbarItem}>
                 <a
+                  target="_blank"
                   href={`https://wa.me/5511988844661?text=${encodeURIComponent(
                     "Olá, gostaria de mais informações sobre como a tecnologia pode me ajudar a lucrar mais."
                   )}`}
@@ -90,12 +91,12 @@ export default function Home() {
                 </a>
               </li>
               <li className={styles.navbarItem}>
-                <a href="https://github.com/AndreMonteiro225/">
+                <a target="_blank" href="https://github.com/AndreMonteiro225/">
                   <FaGithub />
                 </a>
               </li>
               <li className={styles.navbarItem}>
-                <a href="https://www.linkedin.com/in/andr%C3%A9-monteiro-rachel-3a0429240/">
+                <a target="_blank" href="https://www.linkedin.com/in/andr%C3%A9-monteiro-rachel-3a0429240/">
                   <FaLinkedin />
                 </a>
               </li>

@@ -21,6 +21,12 @@
 .aboutSection {
   scroll-margin-top: 80px;
 }
+.containerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
 .contactButton {
     display:flex;
     align-items: center;

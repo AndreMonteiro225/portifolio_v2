@@ -62,7 +62,7 @@
  @media (min-width: 400px) {
 
     .projectsSection {
-        height: 47vh;
+        height: 55vh;
     }
 
     .projectTitle {
@@ -103,14 +103,11 @@
 
 @media (min-width: 840px) {
     .projectsSection {
-        height: 55vh;
-    }
-}
-@media (min-width: 1065px) {
-    .projectsSection {
         height: 65vh;
     }
 }
+
+
  
 
 

@@ -26,9 +26,12 @@
     line-height: 2rem;
 }
 
+
+
 .contactButton {
-    display:flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #1F1F1F;
     background: radial-gradient(circle, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9), rgba(31, 51, 31, 1.9));
     padding: 1.5rem;
@@ -38,12 +41,14 @@
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: bold;
-    margin: 2rem auto 1rem auto;
+    margin: 2rem auto;
     text-decoration: none;
     z-index: 8;
     opacity: 0.9;
     transition: 0.3s ease-in-out;
     gap: 7px;
+    width:100%;
+    
 }
 
 .contactButton:hover {
@@ -68,6 +73,7 @@
     margin-bottom: 0.3rem;
 
 }
+
 .contactDetails .cardBigScreen:last-child {
     margin-bottom: 1.5rem;
 }
@@ -101,16 +107,17 @@
 
 @media (min-width: 600px) {
     .containerTittle {
-    font-size: 2rem;
-    
-}
+        font-size: 2rem;
+
+    }
+
     .contactDetails a:hover {
         box-shadow: 4px 9px 2px black;
         scale: 1.1;
         background: linear-gradient(to left, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9));
     }
 
-    .contactDetails a:hover p{
+    .contactDetails a:hover p {
         transition: 0.6s ease-in-out;
         font-weight: bold;
         letter-spacing: 2px;
@@ -123,13 +130,12 @@
     }
 
     .contactSection p {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin: 0 2rem 1rem 2rem;
     }
 
     .contactButton {
-        
-        font-size: 1.4rem;
+        font-size: 2rem;
         margin: 1.5rem auto;
     }
 
@@ -141,11 +147,27 @@
     }
 }
 
+@media (min-width: 800px) {
+    .aboutSection {
+        margin: 0 4rem;
+    }
+
+    .contactSection h2 {
+        font-size: 38px;
+    }
+
+    .contactSection p {
+        letter-spacing: 1.5px;
+        font-size: 26px;
+    }
+}
+
 @media (min-width: 900px) {
     .containerTittle {
-    font-size: 2rem;
-    
-}
+        font-size: 2rem;
+
+    }
+
     .contactDetails {
         flex-direction: row;
         flex-wrap: wrap;
@@ -174,16 +196,4 @@
         justify-content: center;
     }
 
-}
-@media (min-width: 800px){
-    .aboutSection {
-        margin: 0 4rem;
-    }
-    .contactSection h2 {
-    font-size: 38px;
-    }
-    .contactSection p {
-        letter-spacing: 1.5px;
-        font-size: 26px;
-    }
 }
