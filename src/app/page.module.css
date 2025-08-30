@@ -1,9 +1,9 @@
 .backImg {
     background-image: url('/banner.png');
-    background-size: cover;
+    background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 }
 
 .homeSection {
@@ -55,16 +55,16 @@
     background: linear-gradient(to bottom, rgba(235, 234, 232, 0.8), rgba(31, 31, 31, 0.8));
 
 }
-
-.containerHero img{
-    height: fit-content;
-    max-height: 150px;
-}
 .containerHero {
     display: flex;
     position: relative;
     gap: 30px;
     padding-bottom: 20px;
+}
+
+.containerHero img{
+    height: fit-content;
+    max-height: 150px;
 }
 
 .containerHero:before {
@@ -251,7 +251,7 @@
 .aboutParallax {
     background-image: url('/banner2.png');
     background-size: cover;
-    background-attachment: fixed;
+    
     background-repeat: no-repeat;
     background-position: center;
     height: 30vh;
@@ -327,7 +327,7 @@
 
 @media (min-width: 600px) {
     .containerHero img {
-        max-height: 98%;
+        max-height: 1200px;
         object-fit: contain;
     }
     .containerHero:before {
@@ -387,6 +387,7 @@
 @media (min-width: 768px) {
     .aboutParallax {
         height: 40vh;
+        background-attachment: fixed;
     }
     .aboutParallax ul{
         gap: 5rem;
@@ -394,6 +395,9 @@
     .aboutParallax .navbarItem svg {
         width: 70px;
         height: 70px;
-
+    }
+    .backImg {
+        background-attachment: fixed;
+        background-size: cover;
     }
 }
