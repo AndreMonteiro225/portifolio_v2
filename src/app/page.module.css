@@ -1,27 +1,22 @@
 .backImg {
     background-image: url('/banner.png');
-    background-size: contain;
-    background-position: right;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    
 }
 
 .homeSection {
     margin: 6.5rem 0 1rem 0;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .homeSection h1 {
     margin: 1.3rem 1rem;
     font-size: 2rem;
-    background: linear-gradient(to right, #FFBF00, #D4D4D4 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
 }
 
 .homeSection h2 {
@@ -37,78 +32,6 @@
     padding-bottom: 2rem;
     margin: 0 1.5rem;
 }
-
-.sectionHero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.sectionHero img {
-    object-fit: cover;
-    width: 100%;
-    border: 3px solid white;
-    box-shadow: 0 3px 10px 2px #FFBF00;
-    border-radius: 25px;
-    padding: 10px;
-    background: linear-gradient(to bottom, rgba(235, 234, 232, 0.8), rgba(31, 31, 31, 0.8));
-
-}
-.containerHero {
-    display: flex;
-    position: relative;
-    gap: 30px;
-    padding-bottom: 20px;
-}
-
-.containerHero img{
-    height: fit-content;
-    max-height: 150px;
-}
-
-.containerHero:before {
-    content: "Design - gerenciamento - visibilidade - autenticidade";
-    position: absolute;
-    top: 50%;
-    right: auto;
-    left: 0;
-    background-color: black;
-    color: #FFBF00;
-    font-style: italic;
-    font-weight: bold;
-    opacity: 0.8;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 8;
-    font-size: 20px;
-}
-
-
-
-.heroBox img {
-    width: 100%;
-}
-
-.heroBox {
-    width: 50%;
-}
-
-.containerHero:last-of-type::before {
-    content: "A tecnologia pode ajudar a aparecer pro mercado e a se destacar.";
-}
-
-.homeSection .containerHero:last-of-type img {
-    width: 80%;
-    margin: 0 auto 4rem auto;
-}
-
-
-
 
 .title {
     font-size: 1.4rem;
@@ -130,10 +53,21 @@
     left: 0;
 }
 
+.sliderHero {
+    width: 85%;
+    height: 20vh;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
 .sliderSection {
-
     width: 90%;
-
     height: fit-content;
     margin: 40px auto;
     position: relative;
@@ -251,7 +185,6 @@
 .aboutParallax {
     background-image: url('/banner2.png');
     background-size: cover;
-    
     background-repeat: no-repeat;
     background-position: center;
     height: 30vh;
@@ -332,6 +265,7 @@
     }
     .containerHero:before {
         padding: 0.6rem 0;
+        top: 70%;
     }
     
     .homeSection h1 {

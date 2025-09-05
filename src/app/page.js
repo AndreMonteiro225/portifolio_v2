@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import styles from "./page.module.css";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import HeroSection from "./components/HeroSection";
 import { projects } from "./components/data/data.js";
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
@@ -33,40 +33,11 @@ export default function Home() {
           André Monteiro Rachel
         </h2>
         <div className={styles.backImg}>
-          <section className={styles.sectionHero}>
-            <h1>
-              Código limpo, sites rápidos. Soluções web full-stack que ajudam
-              empresas a crescer.
-            </h1>
-            <div className={styles.containerHero}>
-              <div className={styles.heroBox}>
-                <Image
-                  src={"/restaurante_portifolio.png"}
-                  width={200}
-                  height={130}
-                  alt="xyz"
-                  objectFit="cover"
-                />
-              </div>
-              <div className={styles.heroBox}>
-                <Image
-                  
-                  src={"/agencia_design_portifolio.png"}
-                  width={200}
-                  height={130}
-                  alt="asd"
-                />
-              </div>
-            </div>
-            <div className={styles.containerHero}>
-              <Image
-                src={"/heroImg1.webp"}
-                width={200}
-                height={150}
-                alt="asd"
-              />
-            </div>
-          </section>
+          <h1>Sites e Sistemas que fazem sua empresa lucrar mais.</h1>
+
+          <div className={styles.sliderHero}>
+            <HeroSection />
+          </div>
         </div>
       </section>
       <div className={styles.aboutSection}>
@@ -95,7 +66,10 @@ export default function Home() {
                 </a>
               </li>
               <li className={styles.navbarItem}>
-                <a target="_blank" href="https://www.linkedin.com/in/andr%C3%A9-monteiro-rachel-3a0429240/">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/andr%C3%A9-monteiro-rachel-3a0429240/"
+                >
                   <FaLinkedin />
                 </a>
               </li>
