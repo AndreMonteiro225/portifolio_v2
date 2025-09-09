@@ -74,21 +74,21 @@ export const heroSlides = [
     id: 1,
     title: "Desenvolvimento Web",
     description: "Criação de sites modernos e responsivos para sua empresa.",
-    imageUrl: "/bannerHero2_1200h.webp",
+    imageUrl: "/imgPortifolio_01.webp",
     alt: "Imagem representando desenvolvimento web"
   },
   {
     id: 2,
     title: "Sistemas Personalizados",
-    description: "Soluções sob medida para otimizar os processos do seu negócio.",
-    imageUrl: "/bannerHero1.webp",
+    description: "Sistemas personalizados para otimizar os processos do seu negócio.",
+    imageUrl: "/imgPortifolio_02.webp",
     alt: "Imagem representando sistemas personalizados"
   },
   {
     id: 3,
     title: "Sistemas Personalizados",
-    description: "Soluções sob medida para otimizar os processos do seu negócio.",
-    imageUrl: "/bannerHero2_1200h.webp",
+    description: "Ganhe visibilidade online com nossos serviços de SEO.",
+    imageUrl: "/imgPortifolio_03.webp",
     alt: "Imagem representando sistemas personalizados"
   }
 ];
