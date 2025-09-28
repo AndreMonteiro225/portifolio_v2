@@ -14,10 +14,13 @@
 
 .homeSection h1 {
     margin: 1.3rem 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
     text-shadow: 2px 2px 4px black;
     text-align: center;
+    background-image: radial-gradient(circle, rgb(128, 128, 128, 0.7), rgba(0, 0, 0, 0.7));
+    border-radius: 10px;
+    padding: 7px;
 }
 
 .homeSection h2 {
