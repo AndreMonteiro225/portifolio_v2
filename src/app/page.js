@@ -33,7 +33,7 @@ export default function Home() {
           André Monteiro Rachel
         </h2>
         <div className={styles.backImg}>
-          <h1>Sites e Sistemas que fazem sua empresa lucrar mais.</h1>
+          <h1>Sites e Sistemas feitos para você.</h1>
 
           <div className={styles.sliderHero}>
             <HeroSection />
