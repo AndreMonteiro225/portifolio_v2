@@ -111,10 +111,13 @@
 
 .slide p {
     position: absolute;
-    color: whitesmoke;
+    color: rgb(225, 224, 224);
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.9));
     text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.9);
     padding: 10px;
+    background-image: radial-gradient(circle, rgb(128, 128, 128, 0.7), rgba(0, 0, 0, 0.6));
+    letter-spacing: 1px;
+    border-radius: 10px;
 }
 
 @media (min-width: 700px) {
