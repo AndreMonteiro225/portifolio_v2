@@ -27,8 +27,8 @@ export default function HeroSection() {
           {heroSlides.map((slide, id) => (
             <div className={styles.slide} key={id}>
               <Image
-                width={200}
-                height={200}
+                width={2000}
+                height={2000}
                 src={slide.imageUrl}
                 alt={slide.alt}
               />
