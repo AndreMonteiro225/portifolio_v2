@@ -10,12 +10,13 @@ import agenciaDedignImg from "../../../../public/agencia_design_portifolio.png";
 import sorveteriaImg from "../../../../public/captura de tela SPA-sorveteria.png";
 import agenciaViagemImg from "../../../../public/agencia_viagem.png";
 import siteVendasImg from "../../../../public/foto_site_uidi.png";
+import siteViagemImgWebp from "../../../../public/1.71MB_site_viagens.webp";
 
 export const projects = [
   {
     id: 1,
     titulo: "cardapio de restaurante",
-    url: <a href="https://cardapio-para-restaurante.vercel.app/" target="_blank"><Image src={restauranteImg} alt="projeto restaurante"/></a>,
+    url: <a href="https://cardapio-para-restaurante.vercel.app/" target="_blank"><Image src="/1.36MB_restaurante.webp" width={2000} height={2000} alt="projeto restaurante"/></a>,
     technologies: <>
       <FaReact/>
       <RiJavascriptFill/>
@@ -27,7 +28,7 @@ export const projects = [
  {
     id: 2,
     titulo: "site agencia de design",
-    url: <a href="https://agencia-design-digital-mu.vercel.app/" target="_blank"><Image src={agenciaDedignImg} alt="Site para agencia de designs"/></a>,
+    url: <a href="https://agencia-design-digital-mu.vercel.app/" target="_blank"><Image src="/1.29MB_agencia_design.webp" height={2000} width={2000} alt="Site para agencia de designs"/></a>,
     technologies: <>
       <FaReact/>
       <RiJavascriptFill/>
@@ -38,7 +39,7 @@ export const projects = [
   {
     id: 3,
     titulo: "SPA de uma sorveteria",
-    url: <a href="https://spa-sorveteria-iota.vercel.app/" target="_blank"><Image src={sorveteriaImg} alt="SPA sorveteria"/></a>,
+    url: <a href="https://spa-sorveteria-iota.vercel.app/" target="_blank"><Image src="/269KB_sorveteria.webp" height={2000} width={2000} alt="SPA sorveteria"/></a>,
     technologies: <>
       <FaReact/>
       <IoLogoCss3/>
@@ -49,7 +50,7 @@ export const projects = [
   {
     id: 4,
     titulo: "site para agencia de viagem",
-    url: <a href="https://projeto-agencia-de-viagens-alpha.vercel.app/" target="_blank"><Image src={agenciaViagemImg} alt="agencia de viagens"/></a>,
+    url: <a href="https://projeto-agencia-de-viagens-alpha.vercel.app/" target="_blank"><Image src="/1.71MB_site_viagens.webp" height={2000} width={2000} alt="agencia de viagens"/></a>,
     technologies: <>
       <IoLogoCss3/>
       <IoLogoHtml5/>
@@ -58,7 +59,7 @@ export const projects = [
   {
     id: 5,
     titulo: "Site de Vendas",
-    url: <a href="https://projeto-uidi.vercel.app/" target="_blank"><Image src={siteVendasImg} alt="site de vendas"/></a>,
+    url: <a href="https://projeto-uidi.vercel.app/" target="_blank"><Image src="/986KB_site_uidi.webp" height={2000} width={2000} alt="site de vendas"/></a>,
     technologies: <>
       <FaReact/>
       <RiJavascriptFill/>
