@@ -5,12 +5,7 @@ import { IoLogoHtml5 } from "react-icons/io5";
 import { RiNextjsFill } from "react-icons/ri";
 
 import Image from "next/image";
-import restauranteImg from "../../../../public/restaurante_portifolio.png";
-import agenciaDedignImg from "../../../../public/agencia_design_portifolio.png";
-import sorveteriaImg from "../../../../public/captura de tela SPA-sorveteria.png";
-import agenciaViagemImg from "../../../../public/agencia_viagem.png";
-import siteVendasImg from "../../../../public/foto_site_uidi.png";
-import siteViagemImgWebp from "../../../../public/1.71MB_site_viagens.webp";
+
 
 export const projects = [
   {

@@ -2,7 +2,7 @@
     position: relative;
     padding: 5px;
     margin: 0 auto;
-    height: fit-content;
+    
 }
 
 .sliderHero {
@@ -19,25 +19,25 @@
     scroll-behavior: smooth;
     margin: 0 auto;
     transition: 0.5s ease-in-out;
-    min-height: 80vh;
-    height: auto;
+    height: fit-content;
 }
 
 .sliderContainer img {
     opacity: 0.7;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     /* scroll-snap-align: start; */
     border-radius: 10px;
     margin: 0 10vw;
-    height: auto;
+    height: 100%;
 }
 
 .slideIndicators {
     position: absolute;
-    bottom: 15px;
+    bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
+
     display: flex;
     gap: 8px;
     z-index: 10;
@@ -70,6 +70,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+
 }
 
 .slideDescription {
@@ -83,7 +84,7 @@
 .slideControls button {
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: black;
     border: none;
     padding: 6px 10px;
     border-radius: 5px;
@@ -91,16 +92,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    border: 1px solid whitesmoke;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
 }
 
 .slideControls button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .slide {
   flex: 0 0 100%;
-  box-sizing: border-box;
   width: 100%;
   position: relative;
   display: flex;
@@ -122,10 +124,8 @@
     border-radius: 10px;
 }
 
-@media (min-width: 700px) {
-
-    .sliderContainer img {
-        object-fit: cover;
-        
+@media (min-width: 768px) {
+    .sliderContainer img{
+        height: 70vh;
     }
 }

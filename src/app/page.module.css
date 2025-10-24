@@ -59,7 +59,7 @@
 
 .sliderHero {
     width: 100%;
-    height: 20vh;
+    height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -96,14 +96,14 @@
 
 .slider>* {
     display: flex;
-    flex: 0 0 auto;
+    flex: 0 0 100%;
 }
 
-.slide {
+ .slide {
     flex: 0 0 100%;
     box-sizing: border-box;
-    width: 90%;
-}
+    width: 10vw;
+} 
 
 .slideIndicators {
     background-color: transparent;
