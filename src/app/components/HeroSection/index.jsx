@@ -27,10 +27,13 @@ export default function HeroSection() {
           {heroSlides.map((slide, id) => (
             <div className={styles.slide} key={id}>
               <Image
-                width={2000}
-                height={2000}
+                width={2400}
+                height={1350}
                 src={slide.imageUrl}
                 alt={slide.alt}
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
+                priority
+                quality={90}
               />
               <p className={styles.slideDescription}>{slide.description}</p>
             </div>

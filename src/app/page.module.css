@@ -12,24 +12,29 @@
     height: fit-content;
 }
 
+
+.homeSection h2:nth-of-type(2) {
+    padding-bottom: 0.8rem;
+}
+.homeSection h2 {
+    padding: 0 0 0 1.3rem;
+    display: flex;
+    font-size: clamp(1.4rem, calc(1rem + 2.2vw), 3.2rem);
+    margin: 0.5rem 0;
+    white-space: wrap;
+}
+
 .homeSection h1 {
-    margin: 1.3rem 1rem;
-    font-size: 1.8rem;
+    margin: clamp(2.1rem, calc(1rem + 3vw), 5rem) clamp(calc(1em + 1vw), calc(7rem + 2vw), 9rem);
+    margin-bottom: clamp(0.5rem, calc(1rem + 2vw), 4rem);
+    font-size: clamp(1.4rem, calc(1.2rem + 2.2vw), 3rem);
     color: white;
     text-shadow: 2px 2px 4px black;
     text-align: center;
     background-image: radial-gradient(circle, rgb(128, 128, 128, 0.7), rgba(0, 0, 0, 0.7));
     border-radius: 10px;
-    padding: 7px;
+    padding: clamp(0.8rem, calc(0.5rem + 1vw), 2rem);
 }
-
-.homeSection h2 {
-    display: flex;
-    font-size: 1.6rem;
-    margin: 0.5rem 0;
-    white-space: wrap;
-}
-
 .homeSection p {
     font-size: 1.5rem;
     text-align: center;
@@ -246,35 +251,11 @@
 }
 
 
-@media(min-width: 361px) {
-
-    .containerHero:before {
-        font-size: 22px;
-
-    }
-
-}
-
-@media (min-width: 403px) {
-    .containerHero:before {
-        padding: 0.5rem 0;
-    }
-}
 
 @media (min-width: 600px) {
-    .containerHero img {
-        max-height: 1200px;
-        object-fit: contain;
-    }
-    .containerHero:before {
-        padding: 0.6rem 0;
-        top: 70%;
-    }
+
+
     
-    .homeSection h1 {
-        font-size: 4rem;
-        padding: 2rem 0;
-    }
 
     .homeSection h2 {
         font-size: 2.5rem;
