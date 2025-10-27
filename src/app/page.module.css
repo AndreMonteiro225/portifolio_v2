@@ -25,7 +25,7 @@
 }
 
 .homeSection h1 {
-    margin: clamp(2.1rem, calc(1rem + 3vw), 5rem) clamp(calc(1em + 1vw), calc(7rem + 2vw), 9rem);
+    margin: clamp(1rem, calc(1rem + 3vw), 5rem) clamp(1rem, calc(2rem + 3vw), 9rem);
     margin-bottom: clamp(0.5rem, calc(1rem + 2vw), 4rem);
     font-size: clamp(1.4rem, calc(1.2rem + 2.2vw), 3rem);
     color: white;
