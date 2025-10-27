@@ -45,12 +45,14 @@
     opacity: 0.9;
     transition: 0.3s ease-in-out;
     gap: 7px;
+    filter: drop-shadow(2px 2px 10px #FFBF00);
 }
 
 .contactButton:hover {
-    background-color: #FFBF00;
-    color: #FCFDFD;
-    transition: 0.3s ease-in-out;
+    transition: 1s ease;
+    filter:brightness(1) drop-shadow(0 0 15px #FFBF00);
+    color: white;
+    transform: scale(1.05);
 }
 .navbarItem svg {
     width: 32px;
@@ -77,7 +79,6 @@
     gap: 2rem;
     justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
 }
 
 .headerSection li {
@@ -87,32 +88,3 @@
 }
 
 
-@media (min-width: 600px) {
-
-    .aboutSection {
-        margin: 4rem 2rem;
-    }
-    .aboutSection h2 {
-        font-size: 40px;
-        text-align: left;
-        margin: 1rem;
-    }
-    .aboutSection p {
-        letter-spacing: 1.5px;
-        font-size: 26px;
-    }
-}
-
-@media (min-width: 757px){
-   
-    .aboutSection h2 {
-    font-size: 40px;
-    text-align: left;
-    margin: 1rem;
-    }
-    .aboutSection p {
-        letter-spacing: 1.5px;
-        font-size: 26px;
-        margin: 1rem;
-    }
-}

@@ -170,25 +170,19 @@
 }
 
 .nextBtn {
-    right: -2px;
+    right: 1vw;
     background: linear-gradient(to left, #1F1F1F, whitesmoke);
 
 
 }
 
 .previousBtn {
-    left: -2px;
+    left: 1vw;
     background: linear-gradient(to left, whitesmoke 15%, #1F1F1F);
 
 }
 
-.previousBtn {
-    right: 4rem;
-}
 
-.nextBtn {
-    right: 0;
-}
 
 .aboutParallax {
     background-image: url('/1.28MB_banner2.webp');
@@ -252,70 +246,3 @@
 
 
 
-@media (min-width: 600px) {
-
-
-    
-
-    .homeSection h2 {
-        font-size: 2.5rem;
-    }
-
-    .homeSection p {
-        font-size: 1.8rem;
-        padding: 1.5rem 0;
-    }
-
-
-
-    .sliderSection h2 {
-        font-size: 2.5rem;
-        margin: 1rem;
-    }
-
-    .slider img {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .sliderSection {
-        position: relative;
-    }
-
-    .previousBtn,
-    .nextBtn {
-        top: 50%;
-        transform: none;
-    }
-
-    .nextBtn {
-        right: 5px;
-        left: auto;
-    }
-
-    .previousBtn {
-        left: 5px;
-        right: auto;
-    }
-}
-
-
-
-
-@media (min-width: 768px) {
-    .aboutParallax {
-        height: 40vh;
-        background-attachment: fixed;
-    }
-    .aboutParallax ul{
-        gap: 5rem;
-    }
-    .aboutParallax .navbarItem svg {
-        width: 70px;
-        height: 70px;
-    }
-    .backImg {
-        background-attachment: fixed;
-        background-size: cover;
-    }
-}

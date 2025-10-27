@@ -34,7 +34,6 @@ export default function Home() {
         </h2>
         <div className={styles.backImg}>
           <h1>Sites e Sistemas pensados para o seu negócio.</h1>
-
           <div className={styles.sliderHero}>
             <HeroSection />
           </div>
