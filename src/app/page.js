@@ -77,7 +77,9 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.sliderSection}>
-        <h2>Meus Projetos</h2>
+        <div className={styles.containerSubtitle}>
+          <h2>Meus Projetos</h2>
+        </div>
         <section
           className={styles.slider}
           style={{ transform: `translateX(-${current * 100}%)` }}

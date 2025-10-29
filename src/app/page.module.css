@@ -74,8 +74,9 @@
     text-align: center;
 }
 
+
+
 .sliderSection {
-    width: 90%;
     height: fit-content;
     margin: 40px auto;
     position: relative;
@@ -84,15 +85,16 @@
 }
 
 .sliderSection h2 {
-    text-align: left;
+    text-align: center;
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
 }
 
 .slider {
-    width: 100%;
+    /* width: 100%; */
     margin: 1.3rem auto;
     display: flex;
+    justify-items: center;
     text-align: center;
     transition: 0.5s ease;
 }
@@ -105,9 +107,12 @@
 }
 
  .slide {
+    width: 100%;
     flex: 0 0 100%;
+    
+    /* margin: 0 3rem; */
+    /* text-align: center; */
     box-sizing: border-box;
-    width: 10vw;
 } 
 
 .slideIndicators {

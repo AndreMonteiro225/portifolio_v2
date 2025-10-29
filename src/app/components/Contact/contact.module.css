@@ -20,6 +20,15 @@
     line-height: 2rem;
 }
 
+
+.cardBigScreen {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.3rem;
+    
+}
+
 .contactDetails {
     display: flex;
     flex-direction: column;
@@ -27,14 +36,6 @@
     text-align: center;
     gap: 0.5rem;
     width: 100%;
-}
-
-.cardBigScreen {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 0.3rem;
-
 }
 
 .contactDetails .cardBigScreen:last-child {
