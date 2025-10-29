@@ -1,0 +1,42 @@
+.containerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem auto;
+}
+
+.contactButton {
+    font-size: 1.6rem;
+    display: inline-flex;
+    align-items: center;      
+    gap: 0.6rem;        
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    background-clip: text;
+    background: black;
+    border: 1px solid rgba(255,191,0,0.9);
+    transition: transform 0.18s ease, filter 0.18s ease;
+    cursor: pointer;
+}
+
+.contactButton svg {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+    color: gold;
+}
+
+.contactButton p {
+    margin: 0;
+    line-height: 1;
+    font-weight: 600;
+    color: gold;
+}
+
+.contactButton:hover {
+    transform: translateY(-2px) scale(1.02);
+    filter: brightness(1.08) drop-shadow(0 0 12px #FFBF00);
+    color: #fff;
+}

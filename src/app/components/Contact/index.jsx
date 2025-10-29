@@ -3,6 +3,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import ContactBtn from "../ContactBtn";
 
 export default function Contact() {
   return (
@@ -14,10 +15,8 @@ export default function Contact() {
           sites e sistemas podem te fazer lucrar mais, entre em contato faça o orçamento do seu site ou aplicação web.
         </p>
         <p>solicite uma ferramenta personalizada para seu negócio, se você precisa de visibilidade, melhor gestão dos produtos ou vendas e gostaria de saber como a tecnologia faria isso por você? Entre em contato.</p>
-        <div className={styles.containerBtn}>
-        <a className={styles.contactButton} target="_blank" href={`https://wa.me/5511988844661?text=${encodeURIComponent("Olá, gostaria de mais informações sobre como a tecnologia pode me ajudar a lucrar mais.")}`}><FaWhatsapp/>Entre em contato</a>
-        </div>
       </section>
+        <ContactBtn />
       <div className={styles.containerTittle}>
         <h3>Detalhes de Contato</h3>
       </div>

@@ -1,5 +1,6 @@
 import styles from "./about.module.css";
-import { FaWhatsapp } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
+import ContactBtn from "../ContactBtn";
 
 export default function About() {
   return (
@@ -10,17 +11,7 @@ export default function About() {
         experiências digitais elegantes e intuitivas. Especializado em criar
         aplicações web modernas, responsivas e focadas no usuário.
       </p>
-      <div className={styles.containerBtn}>
-        <a
-          className={styles.contactButton} target="_blank"
-          href={`https://wa.me/5511988844661?text=${encodeURIComponent(
-            "Olá, gostaria de mais informações sobre como a tecnologia pode me ajudar a lucrar mais."
-          )}`}
-        >
-          <FaWhatsapp />
-          <p>Entre em contato</p>
-        </a>
-      </div>
+      <ContactBtn />
     </div>
   );
 }

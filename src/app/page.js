@@ -106,8 +106,10 @@ export default function Home() {
           <GrNext />
         </button>
       </div>
-      <Skills />
-      <Contact />
+      <div>
+        <Skills />
+        <Contact />
+      </div>
     </>
   );
 }
