@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "./components/Header";
 import {Inter} from "next/font/google";
+import SetVhClient from "./components/SetVhClient/SetVhClient";
 
 const mainFontFamily = Inter({
   subsets: ["latin"],
@@ -44,7 +45,6 @@ export const viewport = {
   initialScale: 1,
 }
 
-import SetVhClient from "./components/SetVhClient"; // <--- adicionado
 
 export default function RootLayout({ children }) {
   return (
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </head>
       <body className={`${mainFontFamily.className}`}>
-        <SetVhClient /> {/* <-- adicionado */}
+        <SetVhClient />
         <Header />
         <main>
           {children}
