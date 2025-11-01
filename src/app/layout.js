@@ -47,10 +47,13 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      </head>
       <body className={`${mainFontFamily.className}`}>
         <Header />
         <main>
-        {children}
+          {children}
         </main>
       </body>
     </html>
