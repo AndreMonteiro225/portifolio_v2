@@ -1,3 +1,13 @@
+@keyframes moveGradient {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 200% 50%;
+    }
+}
+
 .contactSection {
     margin: 0 1.5rem;
     padding: 1rem 0;
@@ -24,6 +34,7 @@
     border-radius: 0.15rem;
 
 }
+
 .containerTittle {
     text-align: center;
     margin: 1rem auto;
@@ -42,14 +53,6 @@
 }
 
 
-.cardBigScreen {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 0.3rem;
-    
-}
-
 .contactDetails {
     display: grid;
     grid-template-columns: 1fr;
@@ -57,22 +60,10 @@
     align-items: stretch;
     width: 100%;
     justify-items: center;
-    padding: 0 0 2rem 0; 
+    padding: 0 0 2rem 0;
+
 }
 
-.contactDetails a {
-    width: 100%;
-    max-width: 560px; 
-    box-sizing: border-box;
-}
-
-.contactDetails a {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-}
 
 .contactDetails a svg {
     grid-column: 1;
@@ -81,7 +72,7 @@
     height: 2.5rem;
 }
 
-.contactDetails a > *:not(svg) {
+.contactDetails a>*:not(svg) {
     grid-column: 2;
     justify-self: center;
     text-align: center;
@@ -94,11 +85,18 @@
 }
 
 .contactDetails a {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.contactDetails a {
     text-decoration: none;
     width: 90vw;
     height: clamp(4rem, calc(2rem + 1vw), 4rem);
     color: white;
-    display: flex;
     align-items: center;
     justify-content: start;
     gap: 0.5rem;
@@ -111,9 +109,11 @@
     cursor: pointer;
     background-color: #1F1F1F;
     background: radial-gradient(circle, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9));
+
+
 }
 
-.contactDetails a >*:not(svg) {
+.contactDetails a>*:not(svg) {
     text-align: center;
     flex: 1 1 auto;
 }
@@ -124,15 +124,70 @@
     height: 2.5rem;
 }
 
+
+/* Habilita posição e overflow para a animação */
+.contactDetails a {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+/* halo animado atrás do botão (gradiente em movimento) */
+.contactDetails a::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9), rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9));
+    background-size: 250% 50%;
+    filter: blur(20px) saturate(1.5);
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 0;
+    transition: opacity 240ms ease;
+    will-change: background-position;
+    animation: moveGradient 3s linear infinite;
+}
+
+/* elevação + glow ao hover / foco (acessível) */
+.contactDetails a:hover,
+.contactDetails a:focus-visible {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45), 0 0 18px rgba(255, 191, 0, 0.12);
+    transition: opacity 240ms ease;
+    will-change: background-position;
+    animation: moveGradient 3s linear infinite;
+    background: linear-gradient(90deg, #FFBF00, #D4D4D4, #ffffff, #FFBF00);
+}
+
+
+/* micro animações do ícone e texto */
+.contactDetails a svg,
+.contactDetails a>*:not(svg) {
+    transition: transform 180ms ease, color 180ms ease;
+    position: relative;
+    z-index: 1;
+    /* garante que o conteúdo fique sobre o halo */
+}
+
+.contactDetails a:hover svg,
+.contactDetails a:hover>*:not(svg) {
+    transform: translateY(-2px);
+    color: gold;
+}
+
 @media (min-width: 800px) {
     .contactDetails {
         margin: 1rem auto;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 3rem;
     }
+
     .contactDetails a {
         width: 40vw;
         height: 9rem;
-        max-width: none; /* ocupa toda a célula */
+        max-width: none;
+        /* ocupa toda a célula */
     }
 }
