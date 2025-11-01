@@ -1,24 +1,29 @@
-@keyframes bgMove {
-  from {
-        background-position: 0% 50%;
-    }
-
-    to {
-        background-position: 100% 50%;
-    }
+:root {
+  --header-h: 4rem;
 }
-  
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+html, body, #__next {
+  height: 100%;
+  min-height: 100%;
+}
+
+/* fallback + dinâmica (dvh) para evitar "faixa branca" quando a barra do navegador aparece */
 body {
-  font-family: 'Satoshi', sans-serif;
+  min-height: 100dvh; /* usa viewport dinâmica em navegadores modernos */
   background: linear-gradient(120deg, #221e1e9f, #1F1F1F 40%, #221e1e9f, #121212);
-  background-size: 200% 200%;
-  animation: bgMove 5s ease-in-out infinite alternate;
+  background-size: 200% 850%;
+  padding-bottom: env(safe-area-inset-bottom, 0px); /* evita sobreposição com a barra inferior */
+}
+
+main {
+  min-height: calc(100dvh - var(--header-h, 4rem));
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 12px);
 }
 
 p,

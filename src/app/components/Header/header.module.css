@@ -1,6 +1,6 @@
 .headerSection {
     border-bottom: 1px solid #FFBF00;
-    height: 7%;
+    height: var(--header-h);
     width: 100%;
     position: fixed;
     top: 0;
