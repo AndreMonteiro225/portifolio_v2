@@ -14,9 +14,19 @@
     text-shadow: #1F1F1F 2px 2px 4px;
 }
 
+.containerTittle:after {
+    content: "";
+    display: block;
+    width: 70vw;
+    height: 0.3rem;
+    background-color: #FFBF00;
+    margin: 0.5rem auto 2rem auto;
+    border-radius: 0.15rem;
+}
 .containerTittle {
     text-align: center;
     margin: 1rem auto;
+    font-size: 1.8rem;
 }
 
 
@@ -40,27 +50,55 @@
 }
 
 .contactDetails {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    align-items: stretch;
     width: 100%;
+    justify-items: center;
 }
 
-.contactDetails .cardBigScreen:last-child {
-    margin-bottom: 1.5rem;
+.contactDetails a {
+    width: 100%;
+    max-width: 560px; 
+    box-sizing: border-box;
 }
 
+.contactDetails a {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.contactDetails a svg {
+    grid-column: 1;
+    justify-self: start;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.contactDetails a > *:not(svg) {
+    grid-column: 2;
+    justify-self: center;
+    text-align: center;
+}
+
+.contactDetails p {
+    font-size: 1.2rem;
+    margin: 0.5rem auto;
+    color: #D4D4D4;
+}
 
 .contactDetails a {
     text-decoration: none;
-    width: calc(100% - 3rem);
+    width: 90vw;
     height: clamp(4rem, calc(2rem + 1vw), 4rem);
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 0.5rem;
     text-decoration: none;
     font-size: 1.1rem;
@@ -71,13 +109,28 @@
     cursor: pointer;
     background-color: #1F1F1F;
     background: radial-gradient(circle, rgba(31, 51, 31, 1.9), rgba(20, 20, 20, 0.9));
-    padding: 0.8rem 0.4rem;
 }
 
-
+.contactDetails a >*:not(svg) {
+    text-align: center;
+    flex: 1 1 auto;
+}
 
 .contactDetails svg {
     color: #FFBF00;
-
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
+@media (min-width: 800px) {
+    .contactDetails {
+        margin: 1rem auto;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3rem;
+    }
+    .contactDetails a {
+        width: 40vw;
+        height: 9rem;
+        max-width: none; /* ocupa toda a célula */
+    }
+}
