@@ -7,7 +7,6 @@
         background-position: 200% 50%;
     }
 
-    /* 200% cria ciclo contínuo */
 }
 
 .containerBtn {
@@ -17,10 +16,8 @@
     margin: 2.5rem auto;
 }
 
-/* botão principal: layout e animação */
 .contactButton {
     position: relative;
-    /* necessário para pseudo-elementos */
     overflow: hidden;
     font-size: 1.6rem;
     display: inline-flex;
@@ -40,7 +37,7 @@
     z-index: 0;
 }
 
-/* suave elevação + glow na hover */
+
 .contactButton:hover {
     transform: translateY(-6px) scale(1.01);
     box-shadow:
@@ -49,7 +46,6 @@
     filter: brightness(1.06);
 }
 
-/* foco acessível */
 .contactButton:focus-visible {
     outline: none;
     box-shadow:
@@ -57,12 +53,10 @@
         0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
-/* borda/halo animado usando pseudo-elemento */
 .contactButton::before {
     content: "";
     position: absolute;
     inset: 3px;
-    /* deixa o halo levemente fora para maior efeito */
     z-index: -1;
     border-radius: inherit;
     background: linear-gradient(90deg, #FFBF00, #D4D4D4, #ffffff, #FFBF00);
@@ -74,7 +68,6 @@
     animation: contactGlow 2.5s linear infinite;
 }
 
-/* ativa e anima o halo ao passar o mouse */
 .contactButton:hover::before,
 .contactButton:focus-visible::before {
     opacity: 0.9;
@@ -82,7 +75,6 @@
     animation: contactGlow 2.5s linear infinite;
 }
 
-/* ícone e texto com transições independentes */
 .contactButton svg {
     flex: 0 0 auto;
     width: 1.8rem;
@@ -99,14 +91,12 @@
     transition: transform 180ms ease, color 180ms ease;
 }
 
-/* micro animação do conteúdo ao hover */
 .contactButton:hover svg,
 .contactButton:hover p {
     transform: translateY(-2px);
     color: gold;
 }
 
-/* clique rápido: efeito de pressão */
 .contactButton:active {
     transform: translateY(-2px) scale(0.995);
     transition-duration: 120ms;
