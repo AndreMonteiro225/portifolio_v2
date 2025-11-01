@@ -68,7 +68,7 @@ export const projects = [
           height={1350}
           width={2400}
           alt="SPA sorveteria"
-                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
           quality={85}
         />
@@ -96,7 +96,7 @@ export const projects = [
           height={1350}
           width={2400}
           alt="agencia de viagens"
-                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
           quality={85}
         />
@@ -109,32 +109,32 @@ export const projects = [
       </>
     ),
   },
-  {
-    id: 5,
-    titulo: "Site de Vendas",
-    url: (
-      <a href="https://projeto-uidi.vercel.app/" target="_blank">
-        <Image
-          src="/986KB_site_uidi.webp"
-          height={1350}
-          width={2400}
-          alt="site de vendas"
-                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
-          priority
-          quality={85}
-        />
-      </a>
-    ),
-    technologies: (
-      <>
-        <FaReact />
-        <RiJavascriptFill />
-        <IoLogoCss3 />
-        <IoLogoHtml5 />
-        <RiNextjsFill />
-      </>
-    ),
-  },
+  // {
+  //   id: 5,
+  //   titulo: "Site de Vendas online",
+  //   url: (
+  //     <a href="https://projeto-uidi.vercel.app/" target="_blank">
+  //       <Image
+  //         src="/986KB_site_uidi.webp"
+  //         height={1350}
+  //         width={2400}
+  //         alt="site de vendas"
+  //         // sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
+  //         priority
+  //         quality={85}
+  //       />
+  //     </a>
+  //   ),
+  //   technologies: (
+  //     <>
+  //       <FaReact />
+  //       <RiJavascriptFill />
+  //       <IoLogoCss3 />
+  //       <IoLogoHtml5 />
+  //       <RiNextjsFill />
+  //     </>
+  //   ),
+  // },
 ];
 
 export const heroSlides = [

@@ -9,8 +9,8 @@ export default function Contact() {
   return (
     <>
       <section id="contact" className={styles.contactSection}>
-        <h2>Qual o Próximo Passo?</h2>
-        <h3>Vamos Conversar</h3>
+        <h4>Qual o Próximo Passo?</h4>
+        <h4>Vamos Conversar</h4>
         <p>
           sites e sistemas podem te fazer lucrar mais, entre em contato faça o orçamento do seu site ou aplicação web.
         </p>
