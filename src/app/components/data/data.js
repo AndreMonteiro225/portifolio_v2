@@ -9,6 +9,32 @@ import Image from "next/image";
 export const projects = [
   {
     id: 1,
+    titulo: "site para barbearia",
+    url: (
+      <a href="https://johnny-barbeiro.vercel.app/" target="_blank">
+        <Image
+          src="/print_screen_barbearia.webp.webp"
+          width={2400}
+          height={1350}
+          alt="site barbearia"
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
+          priority
+          quality={85}
+        />
+      </a>
+    ),
+    technologies: (
+      <>
+        <FaReact />
+        <RiJavascriptFill />
+        <IoLogoCss3 />
+        <IoLogoHtml5 />
+        <RiNextjsFill />
+      </>
+    ),
+  },
+  {
+    id: 2,
     titulo: "cardapio de restaurante",
     url: (
       <a href="https://cardapio-para-restaurante.vercel.app/" target="_blank">
@@ -34,8 +60,8 @@ export const projects = [
     ),
   },
   {
-    id: 2,
-    titulo: "site agencia de design",
+    id: 3,
+    titulo: "agencia de design",
     url: (
       <a href="https://agencia-design-digital-mu.vercel.app/" target="_blank">
         <Image
@@ -59,8 +85,8 @@ export const projects = [
     ),
   },
   {
-    id: 3,
-    titulo: "SPA de uma sorveteria",
+    id: 4,
+    titulo: "sorveteria",
     url: (
       <a href="https://spa-sorveteria-iota.vercel.app/" target="_blank">
         <Image
@@ -84,8 +110,8 @@ export const projects = [
     ),
   },
   {
-    id: 4,
-    titulo: "site para agencia de viagem",
+    id: 5,
+    titulo: "site com formulário de contato para agencia de viagem",
     url: (
       <a
         href="https://projeto-agencia-de-viagens-alpha.vercel.app/"
@@ -141,23 +167,23 @@ export const heroSlides = [
   {
     id: 1,
     title: "Desenvolvimento Web",
-    description: "Criação de sites modernos e responsivos para sua empresa.",
+    description: "Fazemos o site do seu negócio baseado no design da sua identidade digital",
     imageUrl: "/748KB_hero_webDevelop.webp",
     alt: "desenvolvimento web",
   },
   {
     id: 2,
-    title: "Sistemas Personalizados",
+    title: "Trafego Online e soluções para aumentar sua relevância digital",
     description:
-      "Sistemas personalizados para otimizar os processos do seu negócio.",
+      "Receba tráfego qualificado para o seu site e aumente suas vendas.",
     imageUrl: "/913KB_hero_sistemas.webp",
-    alt: "sistemas personalizados",
+    alt: "tráfego online",
   },
   {
     id: 3,
-    title: "Relevância Online",
+    title: "Relevância Online, Ficha do Google Meu Negócio, Ranquamento Online do seu negócio",
     description:
-      "Sites construidos trabalhando com SEO a fim de aumentar a relevância online.",
+      "Relevância Online, Ficha do Google Meu Negócio, Ranquamento Online do seu negócio",
     imageUrl: "/9.96MB_hero_SEO.webp",
     alt: "relevância online",
   },
