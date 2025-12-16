@@ -9,13 +9,30 @@ import Image from "next/image";
 export const projects = [
   {
     id: 1,
+    titulo: "site para empresa de topografia",
+    url: (
+      <a href="topoleasing_img.webp" target="_blank">
+        <Image
+          src="/topoleasing_img.webp"
+          width={1280}
+          height={720}
+          alt="site barbearia"
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
+          priority
+          quality={85}
+        />
+      </a>
+    ),
+  },
+  {
+    id: 2,
     titulo: "site para barbearia",
     url: (
       <a href="https://barbeariadojohnny.com.br" target="_blank">
         <Image
           src="/print_screen_barbearia.webp.webp"
-          width={2400}
-          height={1350}
+          width={1280}
+          height={720}
           alt="site barbearia"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
@@ -34,14 +51,14 @@ export const projects = [
     ),
   },
   {
-    id: 2,
+    id: 3,
     titulo: "cardapio de restaurante",
     url: (
       <a href="https://cardapio-para-restaurante.vercel.app/" target="_blank">
         <Image
           src="/1.36MB_restaurante.webp"
-          width={2400}
-          height={1350}
+          width={1280}
+          height={720}
           alt="projeto restaurante"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
@@ -60,14 +77,14 @@ export const projects = [
     ),
   },
   {
-    id: 3,
+    id: 4,
     titulo: "agencia de design",
     url: (
       <a href="https://agencia-design-digital-mu.vercel.app/" target="_blank">
         <Image
           src="/1.29MB_agencia_design.webp"
-          height={1350}
-          width={2400}
+          width={1280}
+          height={720}
           alt="Site para agencia de designs"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
@@ -85,14 +102,14 @@ export const projects = [
     ),
   },
   {
-    id: 4,
+    id: 5,
     titulo: "sorveteria",
     url: (
       <a href="https://spa-sorveteria-iota.vercel.app/" target="_blank">
         <Image
           src="/269KB_sorveteria.webp"
-          height={1350}
-          width={2400}
+          width={1280}
+          height={720}
           alt="SPA sorveteria"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
@@ -110,7 +127,7 @@ export const projects = [
     ),
   },
   {
-    id: 5,
+    id: 6,
     titulo: "site com formulário de contato para agencia de viagem",
     url: (
       <a
@@ -119,8 +136,8 @@ export const projects = [
       >
         <Image
           src="/1.71MB_site_viagens.webp"
-          height={1350}
-          width={2400}
+          width={1280}
+          height={720}
           alt="agencia de viagens"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
@@ -136,7 +153,7 @@ export const projects = [
     ),
   },
   // {
-  //   id: 5,
+  //   id: ,
   //   titulo: "Site de Vendas online",
   //   url: (
   //     <a href="https://projeto-uidi.vercel.app/" target="_blank">
