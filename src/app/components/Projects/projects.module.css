@@ -9,6 +9,15 @@
     display:flex;
 }
 
+.projectItem {
+    display: grid;
+    padding: 10px;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr .1fr 1fr;
+    
+}
+
 .projectsList {
     display: flex;
     margin: 0 auto;
@@ -19,8 +28,9 @@
 }
 
 .projectLink img {
-    width: 60vw;
-    height: clamp(10rem, 30vw, 50vh);
+    width: 100%;
+    height: fit-content;
+
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
@@ -44,6 +54,7 @@
     align-items: center;
     justify-content: center;
     margin: 2rem auto;
+    flex-wrap: wrap;
 }
 .projectTechnologies svg {
     width: 2.5rem;
