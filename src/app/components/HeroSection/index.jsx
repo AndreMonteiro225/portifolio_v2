@@ -33,7 +33,7 @@ export default function HeroSection() {
                 alt={slide.alt}
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
                 priority
-                quality={85}
+                quality={75}
               />
               <p className={styles.slideDescription}>{slide.description}</p>
             </div>

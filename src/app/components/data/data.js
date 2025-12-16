@@ -3,6 +3,9 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { IoLogoCss3 } from "react-icons/io5";
 import { IoLogoHtml5 } from "react-icons/io5";
 import { RiNextjsFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
+
 
 import Image from "next/image";
 
@@ -19,9 +22,21 @@ export const projects = [
           alt="site barbearia"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
-          quality={85}
+          quality={75}
         />
       </a>
+    ),
+    technologies: (
+      <>
+        <FaReact />
+        <RiJavascriptFill />
+        <IoLogoCss3 />
+        <IoLogoHtml5 />
+        <RiNextjsFill />
+        <FaNodeJs />
+        <FaGoogle />
+
+      </>
     ),
   },
   {
@@ -36,7 +51,7 @@ export const projects = [
           alt="site barbearia"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
-          quality={85}
+          quality={75}
         />
       </a>
     ),
@@ -47,6 +62,8 @@ export const projects = [
         <IoLogoCss3 />
         <IoLogoHtml5 />
         <RiNextjsFill />
+        <FaGoogle />
+
       </>
     ),
   },
@@ -62,7 +79,7 @@ export const projects = [
           alt="projeto restaurante"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
-          quality={85}
+          quality={75}
         />
       </a>
     ),
@@ -88,7 +105,7 @@ export const projects = [
           alt="Site para agencia de designs"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
-          quality={85}
+          quality={75}
         />
       </a>
     ),
@@ -113,7 +130,7 @@ export const projects = [
           alt="SPA sorveteria"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
-          quality={85}
+          quality={75}
         />
       </a>
     ),
@@ -141,7 +158,7 @@ export const projects = [
           alt="agencia de viagens"
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 2400px"
           priority
-          quality={85}
+          quality={75}
         />
       </a>
     ),
@@ -184,7 +201,8 @@ export const heroSlides = [
   {
     id: 1,
     title: "Desenvolvimento Web",
-    description: "Fazemos o site do seu negócio baseado no design da sua identidade digital",
+    description:
+      "Fazemos o site do seu negócio baseado no design da sua identidade digital",
     imageUrl: "/748KB_hero_webDevelop.webp",
     alt: "desenvolvimento web",
   },
@@ -198,7 +216,8 @@ export const heroSlides = [
   },
   {
     id: 3,
-    title: "Relevância Online, Ficha do Google Meu Negócio, Ranquamento Online do seu negócio",
+    title:
+      "Relevância Online, Ficha do Google Meu Negócio, Ranquamento Online do seu negócio",
     description:
       "Relevância Online, Ficha do Google Meu Negócio, Ranquamento Online do seu negócio",
     imageUrl: "/9.96MB_hero_SEO.webp",
