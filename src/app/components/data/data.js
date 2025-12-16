@@ -11,7 +11,7 @@ export const projects = [
     id: 1,
     titulo: "site para barbearia",
     url: (
-      <a href="https://johnny-barbeiro.vercel.app/" target="_blank">
+      <a href="https://barbeariadojohnny.com.br" target="_blank">
         <Image
           src="/print_screen_barbearia.webp.webp"
           width={2400}
